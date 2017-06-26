@@ -16,13 +16,10 @@
 				</div>
 				<!-- main-blog ends -->
 
-				<div class="col-md-3 offset-md-1 sidebar">
-					<?php if(is_active_sidebar('sidebar')) : ?>
-
-						<?php dynamic_sidebar('sidebar'); ?>
-
-					<?php endif; ?>
-				</div>
+				<!-- sidebar div -->
+				<div class="col-md-4 sidebar">
+					<?php get_sidebar(); ?>
+				</div>	
 
 
 			</div>

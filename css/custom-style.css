@@ -70,11 +70,11 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 .sidebar {
-  padding: 6.5rem 2rem; }
+  padding: 5rem 0;
+  margin-left: 0 !important; }
 
 .sidebar-module {
-  padding: 2rem 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  padding: 2rem; }
 
 footer {
   background: #181a1f;
@@ -89,8 +89,8 @@ footer {
   .nav-item {
     padding-left: 0; }
 
-  .sidebar {
-    padding: 2rem; } }
+  .sidebar-module {
+    padding: 0; } }
 @media screen and (max-width: 544px) {
   .carousel-caption h1 {
     font-size: 2rem; } }
@@ -133,7 +133,7 @@ textarea {
 
 .blog-title {
   padding: 0;
-  padding-top: 2.4rem;
+  padding-top: 2.2rem;
   text-transform: uppercase; }
 
 .blog-post {

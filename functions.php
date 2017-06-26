@@ -12,7 +12,7 @@ require get_template_directory() . '/inc/theme_support.php';
 // add action of a function
 add_action( 'init', 'LOE_Nav_Menu');
 add_action('widgets_init','LOE_widgets');
-add_action('init','LOE_theme_support');
+add_action('after_setup_theme','LOE_theme_support');
 
 
 // add filter of a functions
