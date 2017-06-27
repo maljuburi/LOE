@@ -76,6 +76,12 @@ body {
 .sidebar-module {
   padding: 2rem; }
 
+.searchbar {
+  padding-top: 0.5rem !important; }
+
+.form-control {
+  margin-right: 0.2rem; }
+
 footer {
   background: #181a1f;
   border-top: 1px solid white; }
@@ -90,7 +96,8 @@ footer {
     padding-left: 0; }
 
   .sidebar-module {
-    padding: 0; } }
+    padding: 0;
+    margin-bottom: 2rem; } }
 @media screen and (max-width: 544px) {
   .carousel-caption h1 {
     font-size: 2rem; } }

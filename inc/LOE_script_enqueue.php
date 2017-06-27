@@ -13,6 +13,7 @@ function LOE_scripts(){
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), true );
 	wp_enqueue_script( 'customMenu', get_template_directory_uri() . '/js/nav-menu.js', array(),'1.0.0', true );
 	wp_enqueue_script( 'customGallery', get_template_directory_uri() . '/js/post-gallery.js', array(),'1.0.0', true );
+	
 }
 
 add_action( 'wp_enqueue_scripts', 'LOE_scripts');

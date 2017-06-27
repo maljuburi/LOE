@@ -14,6 +14,8 @@
 						    <a href="<?php echo get_permalink() . 'begginer'?>" class="btn btn-primary">Start Learning</a>
 					  	</div>
 					</div>
+						
+					
 				</div>
 				<div class="level col-xs-12 col-md-4">
 					<div class="card">

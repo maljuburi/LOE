@@ -8,7 +8,6 @@ require get_template_directory() . '/inc/widgets.php';
 require get_template_directory() . '/inc/theme_support.php';
 
 
-
 // add action of a function
 add_action( 'init', 'LOE_Nav_Menu');
 add_action('widgets_init','LOE_widgets');
