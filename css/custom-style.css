@@ -1,10 +1,10 @@
 html,
 body {
   height: 100%;
-  background: #181a1f; }
+  background: #181A1F; }
 
 .container-fluid {
-  background: white; }
+  background: #FFFFFF; }
 
 .display-4 {
   font-size: 1.5rem; }
@@ -20,10 +20,10 @@ body {
 
 .category-header {
   padding: 1rem;
-  color: white; }
+  color: #FFFFFF; }
 
 .header {
-  background: #181a1f; }
+  background: #181A1F; }
 
 .nav-item {
   padding-left: 1rem;
@@ -31,6 +31,9 @@ body {
 
 .navbar-brand {
   font-weight: 100; }
+
+.fa-bars {
+  font-size: 1.8rem !important; }
 
 .dropdown-menu {
   left: inherit;
@@ -58,7 +61,7 @@ body {
 .begginer,
 .intermediate,
 .advance {
-  color: white;
+  color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 100; }
 
@@ -76,6 +79,9 @@ body {
 .sidebar-module {
   padding: 2rem; }
 
+.sidebar .card-header {
+  border-radius: 0.5rem 0.5rem 0 0 !important; }
+
 .searchbar {
   padding-top: 0.5rem !important; }
 
@@ -83,11 +89,11 @@ body {
   margin-right: 0.2rem; }
 
 footer {
-  background: #181a1f;
+  background: #181A1F;
   border-top: 1px solid white; }
 
 .copyright {
-  color: white;
+  color: #FFFFFF;
   padding: 2rem;
   width: 100%; }
 
@@ -161,7 +167,7 @@ textarea {
   padding: 1rem; }
 
 .begginer-sub-cat:hover {
-  background: #0275d8;
+  background: #0275D8;
   color: white;
   text-decoration: none; }
 
@@ -175,11 +181,11 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 1rem;
-  color: #5cb85c; }
+  color: #5CB85C; }
 
 .intermediate-sub-cat:hover {
-  background: #5cb85c;
-  color: white;
+  background: #5CB85C;
+  color: #FFFFFF;
   text-decoration: none; }
 
 .advance-categories {
@@ -192,10 +198,10 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 1rem;
-  color: #d9534f; }
+  color: #D9534F; }
 
 .advance-sub-cat:hover {
-  background: #d9534f;
+  background: #D9534F;
   color: white;
   text-decoration: none; }
 

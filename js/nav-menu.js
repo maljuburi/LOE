@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	$('.navbar-nav').wrap('<div class="collapse navbar-collapse justify-content-end" id="navbarNav"></div>');
 
-	$('#navbarNav').before('<div class="navbar-brand">Lots of English</div><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>');
+	$('#navbarNav').before('<div class="navbar-brand">Lots of English</div><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>');
 
 	$('.navbar-nav>.menu-item').addClass('nav-item');
 	$('.menu-item>a').addClass('nav-link');

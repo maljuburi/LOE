@@ -12,17 +12,17 @@
 		  </ol>
 		  <div class="carousel-inner" role="listbox">
 		    <div class="carousel-item active">
-		      <img class="d-block img-fluid carousel-img" src="<?php echo get_template_directory_uri() . '/img/cover.jpg' ?>">
+		      <img class="d-block img-fluid carousel-img" src="<?php echo get_theme_mod('slider_image1', get_bloginfo('template_url').'/img/cover1.jpg'); ?>">
 		      <div class="carousel-caption">
-		      	<h1>Caption to be Written</h1>
-		      	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum magnam illo </p>
+		      	<h1><?php echo get_theme_mod('slider_heading1','Caption to be Written #1'); ?></h1>
+		      	<p class="lead"><?php echo get_theme_mod('slider_text1','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum magnam illo #1'); ?></p>
 		      </div>
 		    </div>
 		    <div class="carousel-item">
-		      <img class="d-block img-fluid carousel-img" src="<?php echo get_template_directory_uri() . '/img/cover2.jpg' ?>">
+		      <img class="d-block img-fluid carousel-img" src="<?php echo get_theme_mod('slider_image2', get_bloginfo('template_url').'/img/cover2.jpg'); ?>">
 		      <div class="carousel-caption">
-		      	<h1>Caption to be Written</h1>
-		      	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum magnam illo </p>
+		      	<h1><?php echo get_theme_mod('slider_heading2','Caption to be Written #2'); ?></h1>
+		      	<p class="lead"><?php echo get_theme_mod('slider_text2','Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum magnam illo #2'); ?></p>
 		      </div>
 		    </div>
 		    
