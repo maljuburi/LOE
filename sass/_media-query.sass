@@ -1,12 +1,49 @@
 // Small Screen
 @media screen and (max-width: 768px)
 	
-	.nav-item
-		padding-left: 0
+	.toggler-btn
+		display: block
+	// show menu if .show class is added by jquery
+
+	.main-menu
+		padding: 0
+		display: none
+
+	.nav,
+	.nav-item,
+	.nav-link
+		display: block
+		width: 100%
+		padding: 0
+	.nav-link
+		padding: 0.3rem
+		border-bottom: 1px solid rgba(255,255,255,0.1)
+	.dropdown-menu
+		display: block
+		text-align: left
+		background: inherit
+		overflow: hidden
+		width: 100%
+		position: relative
+		.nav-link
+			padding: 0.3rem
+			
+
+
+	.dropdown-menu,
+	.sub-dropdown > .dropdown-menu
+		padding-left: 3%
+
+	
+	
 
 	.sidebar-module
 		padding: 0
 		margin-bottom: 2rem
+
+	
+
+	
 
 // Extra Small Screen
 @media screen and (max-width: 544px)

@@ -18,17 +18,25 @@
 		<div class="container">
 			<div class="row">
 				
-				
+					<div class="brand display-4 col-xs-12 col-md-3"><?php bloginfo('name'); ?></div>
 
-				<?php wp_nav_menu(array(
-					'theme_location'	=>	'primary',
-					'container'			=>	'nav',
-					'container_class'	=>	'navbar navbar-inverse navbar-toggleable-sm col-sm-12',
-					'menu_class'		=>	'navbar-nav',
+					<button class="toggler-btn">
+						<i class="fa fa-bars"></i>
+					</button>
 					
 					
-				)); ?>
-
+					<?php wp_nav_menu(array(
+						'menu'				=>	'primary',
+						'theme_location'	=>	'primary',
+						'depth'				=>	'0',
+						'container'			=>	'div',
+						'container_class'	=>	'main-menu col-xs-12 col-md-9',
+						'container_id'		=>	'main-menu',
+						'menu_class'		=>	'nav justify-content-end',
+						'fallback_cb'       => 'LOE_Bootstrap_Navwalker::fallback',
+						'walker'			=>	new LOE_Bootstrap_Navwalker()
+					)); ?>
+					
 			</div>
 		</div>
 	</div> <!-- container-fluid -->

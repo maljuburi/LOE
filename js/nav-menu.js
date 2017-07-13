@@ -1,30 +1,45 @@
-$(document).ready(function(){
+$(function(){
 
+	$('.dropdown-menu').hide();
+	$('.caret').addClass('fa fa-angle-right')
 
-	$('.navbar-nav').wrap('<div class="collapse navbar-collapse justify-content-end" id="navbarNav"></div>');
-
-	$('#navbarNav').before('<div class="navbar-brand">Lots of English</div><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars" aria-hidden="true"></i></button>');
-
-	$('.navbar-nav>.menu-item').addClass('nav-item');
-	$('.menu-item>a').addClass('nav-link');
-	
-	$('.menu-item-has-children').addClass('dropdown');
-	
-	$('.menu-item-has-children>a').attr({
-		'class': 'dropdown-toggle nav-link',
-		'id': 'dropdownMenu',
-		'data-toggle': 'dropdown',
-		'aria-haspopup': 'true',
-		'aria-expanded': 'false'
+	$('.toggler-btn').on('click', function(){
+		$('.main-menu').slideToggle(200);
 	});
 
+	$('.dropdown').on('click', function(){
+		$('>.dropdown-menu',this).slideToggle(200,function(){
+				if ($(this).is(':hidden')) {
+					$(this).siblings('.nav-link').children('.caret').removeClass('fa fa-angle-down').addClass('fa fa-angle-right');
+				}else{
+					$(this).siblings('.nav-link').children('.caret').removeClass('fa fa-angle-right').addClass('fa fa-angle-down');
+				}
+		});
 
+		
 
-	$('.sub-menu').attr({
-		'class': 'dropdown-menu sub-menu',
-		'aria-labelledby': 'dropdownMenu'
 	});
 
-	$('.sub-menu a').removeClass('nav-link').addClass('dropdown-item');
+	$('.sub-dropdown').on('click', function(event){
+		$('>.dropdown-menu',this).slideToggle(200,function(){
+			if ($(this).is(':hidden')) {
+				$(this).siblings('.nav-link').children('.caret').removeClass('fa fa-angle-down').addClass('fa fa-angle-right');
+			}else{
+				$(this).siblings('.nav-link').children('.caret').removeClass('fa fa-angle-right').addClass('fa fa-angle-down');
+			}
 
+		});
+		event.stopPropagation();
+
+	});
+
+});
+
+
+$(window).resize(function(){
+		if (window.matchMedia("(min-width:768px)").matches) {
+			$('.main-menu').css("display","block");
+		} else {
+			$('.main-menu').css("display","none");
+		}
 });

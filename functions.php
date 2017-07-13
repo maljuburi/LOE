@@ -4,6 +4,7 @@
 // include functions files
 require get_template_directory() . '/inc/LOE_script_enqueue.php';
 require get_template_directory() . '/inc/navMenu.php';
+require get_template_directory() . '/inc/wp-bootstrap-navwalker.php';
 require get_template_directory() . '/inc/widgets.php';
 require get_template_directory() . '/inc/theme_support.php';
 require get_template_directory() . '/inc/admin/options-menu.php';
