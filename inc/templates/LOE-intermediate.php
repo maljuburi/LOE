@@ -22,7 +22,7 @@
 			      
 			      	
 			        <div class="row">
-			        	<a class="col-md-4 intermediate-sub-cat" href="">Doctor and Medicine</a>
+			        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'doctor-and-medicine'?>">Doctor and Medicine</a>
 			        	<a class="col-md-4 intermediate-sub-cat" href="">Exercise</a>
 			        	<a class="col-md-4 intermediate-sub-cat" href="">Disease and Illness</a>
 			        	<a class="col-md-4 intermediate-sub-cat" href="">Body</a>

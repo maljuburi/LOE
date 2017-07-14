@@ -138,9 +138,18 @@ footer {
   border-top: 1px solid white; }
 
 .copyright {
+  font-size: 13px;
   color: #FFFFFF;
-  padding: 2rem;
-  width: 100%; }
+  text-align: left;
+  padding-top: 2rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1); }
+
+.footer-nav {
+  list-style: none;
+  font-size: 13px;
+  padding: 2rem; }
+  .footer-nav .nav-item .nav-link {
+    padding: 0.1rem; }
 
 @media screen and (max-width: 768px) {
   .toggler-btn {
@@ -177,7 +186,12 @@ footer {
 
   .sidebar-module {
     padding: 0;
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+
+  .copyright {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center; } }
 @media screen and (max-width: 544px) {
   .carousel-caption h1 {
     font-size: 2rem; } }

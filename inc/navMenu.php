@@ -7,4 +7,9 @@ function LOE_Nav_Menu(){
 
 		) );
 
+	register_nav_menus(array(
+		'secondary'					=>	'Footer Menu'
+
+		) );
+
 }
