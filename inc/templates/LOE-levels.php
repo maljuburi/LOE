@@ -1,6 +1,6 @@
 <section class="levels">
 		<div class="container">
-			<h2 class="text-center display-3"> CHOOSE YOUR DESIRED LEVEL </h2>
+			<h2 class="text-center h3"> CHOOSE YOUR LEVEL </h2>
 			<p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium repudiandae dolo.</p>
 			<hr>
 			<div class="row col-xs-12 card-deck">

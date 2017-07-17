@@ -19,10 +19,48 @@
 // levels style
 
 .levels
-	padding: 3rem 0
+	>.container
+		padding: 3rem 0
+		overflow: hidden
+		>h2
+			position: relative
+			top: -150px
+			+transition(1s)
+		>p
+			position: relative
+			left: -150%
+			+transition(1s)
+
+
+
+// is used to animate the levels in, with jquery
+.levels-show
+	>.container
+		>h2
+			top: 0
+		>p	
+			left: 0
+
+
+
+
+.card-deck
+	overflow: hidden
 .level
+	opacity: 0
+	right: -100%
 	padding-top: 1rem
 	text-align: center
+	+transition(1.5s)
+
+
+// is used to animate each card in, with jquery
+.level-show
+	opacity: 1
+	right: 0
+
+
+
 
 .begginer,
 .intermediate,
