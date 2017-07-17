@@ -22,12 +22,11 @@
 			      
 			      	
 			        <div class="row">
-			        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'doctor-and-medicine'?>">Doctor and Medicine</a>
-			        	<a class="col-md-4 intermediate-sub-cat" href="">Exercise</a>
-			        	<a class="col-md-4 intermediate-sub-cat" href="">Disease and Illness</a>
-			        	<a class="col-md-4 intermediate-sub-cat" href="">Body</a>
-			        	<a class="col-md-4 intermediate-sub-cat" href="">Animals and Plants</a>
-			        	<a class="col-md-4 intermediate-sub-cat" href="">Others</a>
+			        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Doctor-and-Medicine'?>">Doctor and Medicine</a>
+			        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Exercise'?>">Exercise</a>
+			        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Disease-and-Illness'?>">Disease and Illness</a>
+			        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Body'?>">Body</a>
+			        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Animals-and-Plants'?>">Animals and Plants</a>
 			        </div>
 			      </div>
 			    </div>
@@ -51,11 +50,10 @@
 				    <div class="card-block">
 				    					      	
 				        <div class="row">
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Cooking and Diet</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Nutrition</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Restaurant</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Shopping</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Others</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Cooking-and-Diet'?>">Cooking and Diet</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Nutrition'?>">Nutrition</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Restaurant'?>">Restaurant</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Shopping'?>">Shopping</a>
 				        </div>
 				    </div>
 			    </div>
@@ -81,11 +79,10 @@
 				    	
 				      	
 				        <div class="row">
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Personality</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Relationship</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Gathering</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Activities</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Others</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Personality'?>">Personality</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Relationship'?>">Relationship</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Gathering'?>">Gathering</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Activities'?>">Activities</a>
 				        </div>
 				    </div>
 			    </div>
@@ -112,13 +109,13 @@
 				    	
 				      
 				        <div class="row">
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Government</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Population</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Culture</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">History</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Law</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Places</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">People</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Government'?>">Government</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Population'?>">Population</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Culture'?>">Culture</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'History'?>">History</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Law'?>">Law</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Places'?>">Places</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'People'?>">People</a>
 				        </div>
 				    </div>
 			    </div>
@@ -144,11 +141,10 @@
 				    <div class="card-block">
 				    					      	
 				        <div class="row">
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Industry</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Income</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Tax</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Interview</a>
-				        	<a class="col-md-4 intermediate-sub-cat" href="">Others</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Industry'?>">Industry</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Income'?>">Income</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Tax'?>">Tax</a>
+				        	<a class="col-md-4 intermediate-sub-cat" href="<?php echo get_permalink() .'Interview'?>">Interview</a>
 				        </div>
 				    </div>
 			    </div>
