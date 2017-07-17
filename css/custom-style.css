@@ -3,9 +3,6 @@ body {
   height: 100%;
   background: #181A1F; }
 
-a {
-  color: #FFFFFF; }
-
 ul {
   list-style: none;
   padding-left: 0.5rem; }
@@ -170,6 +167,8 @@ ul {
 
 .sidebar-module {
   padding: 2rem; }
+  .sidebar-module ul {
+    font-size: 14px; }
 
 .sidebar .card-header {
   border-radius: 0.5rem 0.5rem 0 0 !important; }
@@ -259,6 +258,8 @@ footer {
   margin: 3rem 0; }
   .comments li {
     list-style: none; }
+  .comments a {
+    color: #0275d8; }
 
 .comment-body {
   border: 1px solid white;
