@@ -79,9 +79,13 @@ ul {
     color: #FFFFFF; }
 
 .caret {
-  padding: 0.3rem 0 0 0.5rem;
-  width: 15px;
-  float: right; }
+  padding: 0.3rem 0.5rem;
+  float: right;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s; }
 
 .fa-bars {
   font-size: 1.8rem; }
@@ -260,6 +264,8 @@ textarea {
 
 .post-title {
   padding: 1rem 0; }
+  .post-title a {
+    color: #0275D8; }
 
 .begginer-categories {
   margin-top: 1rem; }
@@ -270,7 +276,13 @@ textarea {
 .begginer-sub-cat {
   border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 1rem; }
+  padding: 1rem;
+  color: #0275D8;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .begginer-sub-cat:hover {
   background: #0275D8;
@@ -287,7 +299,12 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 1rem;
-  color: #5CB85C; }
+  color: #5CB85C;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .intermediate-sub-cat:hover {
   background: #5CB85C;
@@ -304,7 +321,12 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 1rem;
-  color: #D9534F; }
+  color: #D9534F;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
 
 .advance-sub-cat:hover {
   background: #D9534F;

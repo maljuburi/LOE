@@ -10,9 +10,13 @@ $(function(){
 	$('.dropdown').on('click', function(){
 		$('>.dropdown-menu',this).slideToggle(200,function(){
 				if ($(this).is(':hidden')) {
-					$(this).siblings('.nav-link').children('.caret').removeClass('fa fa-angle-down').addClass('fa fa-angle-right');
+					$(this).siblings('.nav-link').children('.caret').css({
+						'transform': 'rotate(0deg)'
+					});
 				}else{
-					$(this).siblings('.nav-link').children('.caret').removeClass('fa fa-angle-right').addClass('fa fa-angle-down');
+					$(this).siblings('.nav-link').children('.caret').css({
+						'transform': 'rotate(90deg)'
+					});
 				}
 		});
 
@@ -23,9 +27,13 @@ $(function(){
 	$('.sub-dropdown').on('click', function(event){
 		$('>.dropdown-menu',this).slideToggle(200,function(){
 			if ($(this).is(':hidden')) {
-				$(this).siblings('.nav-link').children('.caret').removeClass('fa fa-angle-down').addClass('fa fa-angle-right');
+				$(this).siblings('.nav-link').children('.caret').css({
+					'transform': 'rotate(0deg)'
+				});
 			}else{
-				$(this).siblings('.nav-link').children('.caret').removeClass('fa fa-angle-right').addClass('fa fa-angle-down');
+				$(this).siblings('.nav-link').children('.caret').css({
+					'transform': 'rotate(90deg)'
+				});
 			}
 
 		});
