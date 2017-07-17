@@ -110,7 +110,7 @@ if ( ! class_exists( 'LOE_Bootstrap_Navwalker' ) ) {
 				//=====================================
 
 				if ( $args->has_children) {
-					$atts['href']   		= '#';
+					$atts['href']   		= '';
 					$atts['class']			= 'nav-link';
 				} else {
 					$atts['href'] = ! empty( $item->url ) ? $item->url : '';
