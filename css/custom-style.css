@@ -71,6 +71,7 @@ ul {
   padding: 1rem;
   color: rgba(255, 255, 255, 0.7) !important; }
   .nav-link:hover {
+    cursor: default;
     color: rgba(255, 255, 255, 0.5); }
   .nav-link:focus {
     color: #FFFFFF; }
