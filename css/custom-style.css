@@ -45,7 +45,7 @@ ul {
 
 .dropdown-menu {
   font-size: inherit;
-  display: block;
+  display: none;
   background: #181A1F;
   border: none;
   border-radius: 0;
@@ -71,7 +71,7 @@ ul {
   padding: 1rem;
   color: rgba(255, 255, 255, 0.7) !important; }
   .nav-link:hover {
-    cursor: default;
+    cursor: pointer;
     color: rgba(255, 255, 255, 0.5); }
   .nav-link:focus {
     color: #FFFFFF; }

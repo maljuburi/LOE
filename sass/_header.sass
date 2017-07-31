@@ -21,7 +21,7 @@
 
 .dropdown-menu
 	font-size: inherit
-	display: block
+	display: none
 	background: $themeColor
 	border: none
 	border-radius: 0
@@ -38,27 +38,26 @@
 	position: relative
 	padding-left: 0.5rem
 	font-size: 97%
-	
+
 
 
 .dropdown,
 .sub-dropdown
 	position: relative
 
-	
+
 
 .nav-link
 	padding: 1rem
 	color: rgba(255,255,255,0.7) !important
 	&:hover
-		cursor: default
+		cursor: pointer
 		color: rgba(255,255,255,0.5)
 	&:focus
 		color: $lightFont
 
 .caret
 	padding: 0.3rem 0.5rem
-
 	float: right
 	+transition(0.2s)
 

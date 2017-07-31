@@ -6,27 +6,30 @@
 		Navigation Menu Script
 	--------------------------
 */
+var mainMenu = $('.main-menu');
+var dropdown = $('.dropdown');
 
 
-
-$('.dropdown-menu').hide();
-$('.caret').addClass('fa fa-angle-right');
 
 $('.toggler-btn').on('click', function(){
-	$('.main-menu').slideToggle(200);
+	mainMenu.slideToggle(200);
 });
 
-$('.dropdown').on('click', function(){
+
+dropdown.on('click', function(){
 	$('>.dropdown-menu',this).slideToggle(200,function(){
 			if ($(this).is(':hidden')) {
+
 				$(this).siblings('.nav-link').children('.caret').css({
-					
 					'transform': 'rotate(0deg)'
 				});
+
 			}else{
+
 				$(this).siblings('.nav-link').children('.caret').css({
 					'transform': 'rotate(90deg)'
 				});
+
 			}
 	});
 
@@ -60,11 +63,3 @@ $(window).resize(function(){
 			$('.main-menu').css("display","block");
 		}
 });
-
-
-
-
-
-
-
-
