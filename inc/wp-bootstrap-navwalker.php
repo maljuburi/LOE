@@ -83,6 +83,7 @@ if ( ! class_exists( 'LOE_Bootstrap_Navwalker' ) ) {
 
 				if ( $depth == 0 && $args->has_children ) {
 					$class_names .= ' dropdown';
+
 				}
 
 				if ($depth >= 1 && $args->has_children){
@@ -104,7 +105,7 @@ if ( ! class_exists( 'LOE_Bootstrap_Navwalker' ) ) {
 				}
 				$atts['target'] = ! empty( $item->target )	? $item->target	: '';
 				$atts['rel']    = ! empty( $item->xfn )		? $item->xfn	: '';
-				
+
 
 				// If item has_children add atts to a.
 				//=====================================
@@ -144,7 +145,7 @@ if ( ! class_exists( 'LOE_Bootstrap_Navwalker' ) ) {
 					$item_output .= '<a' . $attributes . '>';
 				}
 				$item_output .= $args->link_before . apply_filters( 'the_title', $item->title, $item->ID ) . $args->link_after;
-				$item_output .= ( $args->has_children) ? ' <span class="caret"></span></a>' : '</a>';
+				$item_output .= ( $args->has_children) ? ' <span class="caret fa fa-angle-right"></span></a>' : '</a>';
 				$item_output .= $args->after;
 				$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
 			} // End if().
