@@ -13,7 +13,7 @@
 							the code below graps the content,but also consider the format of the post
 							=================================== -->
 						<?php get_template_part('content' , get_post_format()); ?>
-							
+
 						<hr>
 					<?php endwhile; ?>
 				<?php else : ?>
