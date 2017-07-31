@@ -8,6 +8,7 @@
 */
 var mainMenu = $('.main-menu');
 var dropdown = $('.dropdown');
+var subDropdown = $('.sub-dropdown');
 
 
 
@@ -37,7 +38,7 @@ dropdown.on('click', function(){
 
 
 
-$('.sub-dropdown').on('click', function(event){
+subDropdown.on('click', function(event){
 	$('>.dropdown-menu',this).slideToggle(200,function(){
 		if ($(this).is(':hidden')) {
 			$(this).siblings('.nav-link').children('.caret').css({
@@ -58,8 +59,8 @@ $('.sub-dropdown').on('click', function(event){
 
 $(window).resize(function(){
 		if (window.matchMedia("(max-width:767px)").matches) {
-			$('.main-menu').css("display","none");
+			mainMenu.css("display","none");
 		} else {
-			$('.main-menu').css("display","block");
+			mainMenu.css("display","block");
 		}
 });

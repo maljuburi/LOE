@@ -224,7 +224,6 @@ footer {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
 
   .dropdown-menu {
-    display: block;
     text-align: left;
     background: inherit;
     overflow: hidden;
