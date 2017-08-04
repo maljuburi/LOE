@@ -8,9 +8,9 @@
     <section class="formWrapper col-xl-4 col-md-8 col-xs-12">
       <form action="success.php" method="post">
         <div class="form-group">
-          <input type="text" class="form-control" name="name" value="" placeholder="Name" maxlength="50">
-          <input type="text" class="form-control" name="email" value="" placeholder="Email">
-          <textarea class="form-control" name="message" placeholder="Your Message"></textarea>
+          <input type="text" class="form-control contact-input" name="name" value="" placeholder="Name" maxlength="50">
+          <input type="text" class="form-control contact-input" name="email" value="" placeholder="Email">
+          <textarea class="form-control contact-input" name="message" placeholder="Your Message"></textarea>
           <input type="submit" name="submit" class="btn btn-block btn-secondary" value="Send">
         </div>
       </form>
