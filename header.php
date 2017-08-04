@@ -8,23 +8,23 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<?php wp_head(); ?>
-	
-	
+
+
 </head>
 <body>
-	
+
 	<!-- Navigation bar -->
 	<div class="container-fluid header">
 		<div class="container">
 			<div class="row">
-				
-					<div class="brand display-4 col-xs-12 col-md-3"><?php bloginfo('name'); ?></div>
+
+					<div class="brand display-4 col-xs-12 col-md-3"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
 
 					<button class="toggler-btn">
 						<i class="fa fa-bars"></i>
 					</button>
-					
-					
+
+
 					<?php wp_nav_menu(array(
 						'theme_location'	=>	'header_menu',
 						'depth'				=>	'0',
@@ -35,9 +35,7 @@
 						'fallback_cb'       => 'LOE_Bootstrap_Navwalker::fallback',
 						'walker'			=>	new LOE_Bootstrap_Navwalker()
 					)); ?>
-					
+
 			</div>
 		</div>
 	</div> <!-- container-fluid -->
-
-
