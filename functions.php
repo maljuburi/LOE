@@ -7,9 +7,9 @@ require get_template_directory() . '/inc/navMenu.php';
 require get_template_directory() . '/inc/wp-bootstrap-navwalker.php';
 require get_template_directory() . '/inc/widgets.php';
 require get_template_directory() . '/inc/theme_support.php';
-require get_template_directory() . '/inc/admin/options/options-menu.php';
-require get_template_directory() . '/inc/admin/options/options-page.php';
-require get_template_directory() . '/inc/admin/options/backend-scripts.php';
+require get_template_directory() . '/inc/admin/options/_options-menu.php';
+require get_template_directory() . '/inc/admin/options/_options-pages.php';
+require get_template_directory() . '/inc/admin/options/_backend-scripts.php';
 require get_template_directory() . '/inc/admin/customizer/customizer.php';
 
 
@@ -25,4 +25,3 @@ add_action('wp_head','LOE_customize_css_output');
 
 
 // add filter of a functions
-

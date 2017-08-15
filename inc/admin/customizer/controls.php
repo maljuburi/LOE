@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 
 // image 1
@@ -13,7 +13,6 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'slider
 	)));
 
 // image 1 heading
-
 $wp_customize->add_control('slider_heading1', array(
 
 	'label'				=>	__('Image Heading #1', 'LOE'),
