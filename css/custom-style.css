@@ -3,6 +3,9 @@ body {
   height: 100%;
   background: #181A1F; }
 
+hr {
+  box-shadow: 0 1px 0 white; }
+
 ul {
   list-style: none;
   padding-left: 0.5rem; }
@@ -394,7 +397,7 @@ textarea {
   padding-top: 3rem; }
 
 .contact-form {
-  margin: 0 auto; }
+  margin: 2em auto; }
 
 .contact-input {
   background: rgba(0, 0, 0, 0.3);
