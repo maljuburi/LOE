@@ -1,6 +1,6 @@
 <?php 
 /*
-template name: Begginer
+template name: Beginner
 
 */ 
 

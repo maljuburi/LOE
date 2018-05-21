@@ -9,10 +9,9 @@
 			
 				<h2 class="page-title display-2"><?php the_title(); ?></h2>
 
-				<?php require (get_template_directory() . '/inc/templates/LOE-begginer.php'); ?>
+				<?php require (get_template_directory() . '/inc/templates/LOE-beginner.php'); ?>
 			
 			</div>
-
 
 			<!-- sidebar div -->
 			<div class="col-md-4 sidebar">

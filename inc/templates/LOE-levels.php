@@ -6,12 +6,12 @@
 			<div class="row col-xs-12 card-deck">
 				<div class="level col-xs-12 col-md-4">
 					<div class="card">
-						<h3 class="card-header begginer bg-primary">Begginer</h3>
+						<h3 class="card-header beginner bg-primary">Beginner</h3>
 
 						<div class="card-block">
 						    <h4 class="card-title">Special title treatment</h4>
 						    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-						    <a href="<?php echo get_permalink() . 'begginer'?>" class="btn btn-primary">Start Learning</a>
+						    <a href="<?php echo get_permalink() . 'beginner'?>" class="btn btn-primary">Start Learning</a>
 					  	</div>
 					</div>
 						
