@@ -45,7 +45,7 @@
  			levels
  		============	-->
 <div class="container-fluid">
-	<?php require (get_template_directory() . '/inc/templates/LOE-levels.php'); ?>
+	<?php require (get_template_directory() . '/inc/templates/LOE-levels-cards.php'); ?>
 </div>
 
 

@@ -11,6 +11,9 @@ require get_template_directory() . '/inc/admin/options/_options-menu.php';
 require get_template_directory() . '/inc/admin/options/_options-pages.php';
 require get_template_directory() . '/inc/admin/options/_backend-scripts.php';
 require get_template_directory() . '/inc/admin/customizer/customizer.php';
+require get_template_directory() . '/inc/add_user_id_column.php';
+require get_template_directory() . '/inc/add_page.php';
+require get_template_directory() . '/inc/add_levels_pages.php';
 
 
 // add action of a function
@@ -21,7 +24,9 @@ add_action('admin_menu','LOE_admin_menu');
 add_action('admin_init','LOE_backend_scripts');
 add_action('customize_register','LOE_customize_register');
 add_action('wp_head','LOE_customize_css_output');
-
+add_action('manage_users_custom_column',  'rd_user_id_column_content', 10, 3);
 
 
 // add filter of a functions
+add_filter('manage_users_columns', 'rd_user_id_column');
+

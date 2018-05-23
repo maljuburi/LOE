@@ -9,7 +9,12 @@
 			
 				<h2 class="page-title display-2"><?php the_title(); ?></h2>
 
-				<?php require (get_template_directory() . '/inc/templates/LOE-beginner.php'); ?>
+				<?php
+				$levelPage = 'beginner';
+				require (get_template_directory() . '/inc/templates/LOE-level-topics.php'); 
+				
+				
+				?>
 			
 			</div>
 
