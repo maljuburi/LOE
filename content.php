@@ -37,7 +37,6 @@
 					 ============================== -->
 					<?php if(is_single()) : ?>
 						<?php the_content(); ?>
-						<hr>
 						<?php comments_template(); ?>
 					<?php else : ?>
 						<?php the_excerpt(); ?>

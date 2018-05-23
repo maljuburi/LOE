@@ -6,7 +6,7 @@
 		<div class="row">
 			<div class="col-md-8 blog">
 			<h1 class="blog-title display-1">Blog</h1>
-			<hr>
+			
 				<?php if(have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>
 							<!-- =================
@@ -15,7 +15,7 @@
 						<?php get_template_part('content' , get_post_format()); ?>
 
 
-						<hr>
+						
 					<?php endwhile; ?>
 				<?php else : ?>
 					<p><?php __('No Posts Found'); ?></p>

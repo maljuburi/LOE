@@ -4,7 +4,8 @@ body {
   background: #181A1F; }
 
 hr {
-  box-shadow: 0 1px 0 white; }
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2); }
 
 ul {
   list-style: none;
@@ -170,7 +171,7 @@ ul {
 
 .page-title {
   padding: 1rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .sidebar {
   padding: 5rem 0;
@@ -192,7 +193,7 @@ ul {
 
 footer {
   background: #181A1F;
-  border-top: 1px solid white; }
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
 .copyright {
   font-size: 13px;
@@ -203,16 +204,20 @@ footer {
   border-left: 1px solid rgba(255, 255, 255, 0.1); }
 
 .footer-nav {
-  font-size: 16px;
+  font-size: 14px;
   padding: 1.5rem 0.3rem; }
   .footer-nav > li > a {
-    color: white; }
+    color: rgba(255, 255, 255, 0.6); }
+    .footer-nav > li > a:hover {
+      color: rgba(255, 255, 255, 0.8); }
   .footer-nav > li li {
     font-size: 75%;
     list-style: disc;
     padding: 0.1rem; }
     .footer-nav > li li a {
-      color: rgba(255, 255, 255, 0.7); }
+      color: rgba(255, 255, 255, 0.4); }
+      .footer-nav > li li a:hover {
+        color: rgba(255, 255, 255, 0.6); }
 
 @media screen and (max-width: 767px) {
   .toggler-btn {
@@ -302,12 +307,14 @@ textarea {
   width: 5rem; }
 
 .blog-title {
-  padding: 0;
+  padding: 0.5em 0;
   padding-top: 2.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   text-transform: uppercase; }
 
 .blog-post {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .post-title {
   padding: 1rem 0; }
@@ -388,13 +395,20 @@ textarea {
 .contact-form {
   margin: 2em auto; }
 
-.contact-input {
+.contact-field {
   background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   color: white;
-  margin: 0.5rem 0; }
-  .contact-input:focus {
+  padding: 0.7em;
+  margin: 0.5rem 0;
+  box-shadow: 0 0 0.3em black; }
+  .contact-field:focus {
     background: rgba(0, 0, 0, 0.5);
     border-color: white;
     color: white; }
+
+.contact-btn {
+  margin: 0.3em 0;
+  padding: 0.7em; }
 
 /*# sourceMappingURL=custom-style.css.map */

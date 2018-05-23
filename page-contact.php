@@ -10,10 +10,13 @@
     <div class="row">
       <form class="contact-form col-xl-4 col-md-8 col-xs-12" action="" method="post">
         <div class="form-group">
-          <input type="text" class="form-control contact-input" name="name" value="" placeholder="Name" maxlength="50" required>
-          <input type="email" class="form-control contact-input" name="email" value="" placeholder="Email" required>
-          <textarea class="form-control contact-input" name="message" placeholder="Your Message" required></textarea>
-          <input type="submit" name="submit" class="btn btn-block btn-secondary" value="Send">
+          <input type="text" class="form-control contact-field" name="name" value="" placeholder="Name" maxlength="50" required>
+          <input type="email" class="form-control contact-field" name="email" value="" placeholder="Email" required>
+          <textarea class="form-control contact-field" name="message" placeholder="Your Message" required></textarea>
+          <p class="text-right">
+            <input type="reset" name="reset" class="col-md-3 contact-btn btn btn-secondary" value="Clear">
+            <input type="submit" name="submit" class="col-md-3 contact-btn btn btn-secondary" value="Send">
+          </p>
         </div>
       </form>
     </div>
