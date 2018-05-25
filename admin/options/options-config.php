@@ -12,8 +12,8 @@ function LOE_admin_menu(){
 		'manage_options',
 		// Page Slug
 		'LOE_theme_options',
-		// function which can be called to general the page
-		'LOE_theme_options_page'
+		// callback function to generate page
+		'LOE_quiz_option'
 		// Other Options can be added:
 			// custom icon
 			// the position of the menu
@@ -24,32 +24,34 @@ function LOE_admin_menu(){
 		// Parent Slug
 		'LOE_theme_options',
 		// Page title
-		'LOE Theme Options',
+		'Quiz Control',
 		// Menu title
-		'Settings',
+		'Quiz',
 		// capability
 		'manage_options',
 		// Sub page Slug
 		'LOE_theme_options',
 		// Callback function to generate the page
-		'LOE_theme_options_page'
+		'LOE_quiz_option'
 	);
 
-	// Adding Submenu to the above main menu
-	add_submenu_page(
-		// Parent Slug
-		'LOE_theme_options',
-		// Page title
-		'Contact Form Activation',
-		// Menu title
-		'Contact Form',
-		// capability
-		'manage_options',
-		// Sub page Slug
-		'LOE_theme_contact_form',
-		// Callback function to generate the page
-		'LOE_theme_contact_form_page'
-	);
+	// // Adding Submenu to the above main menu
+	// add_submenu_page(
+	// 	// Parent Slug
+	// 	'LOE_theme_options',
+	// 	// Page title
+	// 	'Contact Form Activation',
+	// 	// Menu title
+	// 	'Contact Form',
+	// 	// capability
+	// 	'manage_options',
+	// 	// Sub page Slug
+	// 	'LOE_theme_contact_form',
+	// 	// Callback function to generate the page
+	// 	'LOE_theme_contact_form_page'
+	// );
+
+
 
 
 }

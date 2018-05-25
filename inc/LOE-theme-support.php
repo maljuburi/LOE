@@ -1,5 +1,7 @@
 <?php 
 
+
+
 function LOE_theme_support(){
 	//adding post thumbnail feature
 	add_theme_support('post-thumbnails');

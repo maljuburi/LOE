@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,QAAQ;EACN,OAAO,EAAE,GAAG;EACZ,KAAK,EAAE,IAAI;;AAEb,EAAE;EACA,MAAM,EAAE,4BAAqB;EAC7B,UAAU,EAAE,gCAAoB;;AAGlC,OAAO;EACL,UAAU,ECXH,OAAO;EDYd,OAAO,EAAE,KAAK;EACd,UAAU,EAAE,GAAG;EACf,QAAQ,EAAE,MAAM;EAChB,KAAK,EAAE,IAAI;EAEX,KAAK,ECdK,OAAO;EDejB,UAAU,EAAE,UAAU",
+"sources": ["../sass/back/_reset.sass","../sass/back/_var.sass"],
+"names": [],
+"file": "back-style.css"
+}
