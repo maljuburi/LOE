@@ -26,7 +26,7 @@ function LOE_admin_menu(){
 		// Page title
 		'Quiz Control',
 		// Menu title
-		'Quiz',
+		'Add Quiz',
 		// capability
 		'manage_options',
 		// Sub page Slug
@@ -35,21 +35,21 @@ function LOE_admin_menu(){
 		'LOE_quiz_option'
 	);
 
-	// // Adding Submenu to the above main menu
-	// add_submenu_page(
-	// 	// Parent Slug
-	// 	'LOE_theme_options',
-	// 	// Page title
-	// 	'Contact Form Activation',
-	// 	// Menu title
-	// 	'Contact Form',
-	// 	// capability
-	// 	'manage_options',
-	// 	// Sub page Slug
-	// 	'LOE_theme_contact_form',
-	// 	// Callback function to generate the page
-	// 	'LOE_theme_contact_form_page'
-	// );
+
+	add_submenu_page(
+		// Parent Slug
+		'LOE_theme_options',
+		// Page title
+		'Quiz Table',
+		// Menu title
+		'Display Quizes',
+		// capability
+		'manage_options',
+		// Sub page Slug
+		'LOE_quiz_table_page',
+		// Callback function to generate the page
+		'LOE_quiz_table'
+	);
 
 
 

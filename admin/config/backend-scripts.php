@@ -10,6 +10,8 @@ function LOE_backend_scripts(){
 	// JS
 	wp_enqueue_script( 'tooltips', 'http://www.atlasestateagents.co.uk/javascript/tether.min.js', array(), true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', array(), true );
+	wp_enqueue_script( 'backEndJS', get_template_directory_uri() . '/js/back-end.js', array(), true );
+	
 
 
 

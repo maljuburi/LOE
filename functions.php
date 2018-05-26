@@ -17,8 +17,6 @@ require get_template_directory() . '/admin/config/add_page.php';
 require get_template_directory() . '/admin/config/add_levels_pages.php';
 require get_template_directory() . '/admin/options/options-config.php';
 require get_template_directory() . '/admin/options/options-callback.php';
-require get_template_directory() . '/admin/quiz/quiz-config.php';
-require get_template_directory() . '/admin/quiz/quiz-callback.php';
 require get_template_directory() . '/admin/config/backend-scripts.php';
 require get_template_directory() . '/admin/customizer/customizer.php';
 
@@ -39,7 +37,6 @@ add_action('after_setup_theme','LOE_theme_support');
 // ------------------
 // Admin Settings
 add_action('admin_menu','LOE_admin_menu');
-add_action('admin_init', 'LOE_quiz_settings');
 // scripts/css links
 add_action('admin_init','LOE_backend_scripts');
 // Theme customizer

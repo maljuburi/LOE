@@ -29,6 +29,28 @@ template name: Advance
 			<!-- sidebar div -->
 			<div class="col-md-4 sidebar">
 				<?php get_sidebar(); ?>
+				<?php 
+				$topic = get_the_title();
+				$level = get_the_title($post->post_parent);
+				global $wpdb;
+				$table_name = $wpdb->prefix . "quiz";
+
+				$results = $wpdb->get_results("
+				SELECT * FROM $table_name WHERE topic_level='$level' AND topic='$topic';
+				");
+				
+				?>
+				<div class="container quiz-widget">
+					<form action="<?php echo home_url(). "/quiz" ?>" method="post">
+						<input type="hidden" name="level" value="<?php echo $level  ?>">
+						<input type="hidden" name="topic" value="<?php echo $topic  ?>">
+						<?php if (!empty($results)) {?>
+						<input type="submit" name="submit" class="take-quiz-btn btn btn-danger" value="Take a Quiz" />
+						<?php }else{ ?>
+						<div class="alert alert-danger">Quiz will be available soon</div>
+						<?php } ?>
+					</form>
+				</div>
 			</div>	
 		</div>
 	</div>

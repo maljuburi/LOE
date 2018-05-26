@@ -15,29 +15,30 @@
  
   ?>
 
-
+<div class="form-group quiz-form-group row">
+<label class="quiz-lbl col-md-12"> Select Topic :</label>
 <!-- Add Fields To Quiz Page Below -->
-<select name="quiz_topic" id="quiz_topic" required>
-  <option value="">-------- Select the Topic ---------</option>
+<select class="form-control col-md-12" name="topic" required>
+  <option value="">Select the Topic</option>
   <?php
   foreach ($BeginnerChildren as $bChild){
       ?>
-      <option value="<?php echo $bChild->post_name ?>"><?php echo $beginnerPage->post_title . " - " . $bChild->post_title ?></option>
+      <option value="<?php echo $beginnerPage->post_title . "-" . $bChild->post_title ?>"><?php echo $beginnerPage->post_title . " - " . $bChild->post_title ?></option>
   <?php
     }
     
     foreach ($IntermediateChildren as $iChild){
       ?>
-      <option value="<?php echo $iChild->post_name ?>"><?php echo $intermediatePage->post_title . " - " . $iChild->post_title ?></option>
+      <option value="<?php echo $intermediatePage->post_title . "-" . $iChild->post_title ?>"><?php echo $intermediatePage->post_title . " - " . $iChild->post_title ?></option>
   <?php
     }
 
     foreach ($AdvanceChildren as $aChild){
       ?>
-      <option value="<?php echo $aChild->post_name ?>"><?php echo $advancePage->post_title . " - " . $aChild->post_title ?></option>
+      <option value="<?php echo $advancePage->post_title . "-" . $aChild->post_title ?>"><?php echo $advancePage->post_title . " - " . $aChild->post_title ?></option>
   <?php
     }
   
   ?>
 </select>
-
+</div>

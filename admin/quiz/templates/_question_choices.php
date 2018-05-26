@@ -1,9 +1,11 @@
 
-<label for="A">A :</label>
-<input id="A" type="text" name="question_choices" required> <br>
-<label for="B">B :</label>
-<input id="B" type="text" name="question_choices" required> <br>
-<label for="C">C :</label>
-<input id="C" type="text" name="question_choices" required> <br>
-<label for="D">D :</label>
-<input id="D" type="text" name="question_choices" required> <br>
+
+<div class="form-group quiz-form-group row">
+<label class="quiz-lbl col-md-12" for="A">Enter Choices</label>
+
+<input id="A" class="form-control col-md-12" type="text" name="ch1" placeholder="A" required> <br>
+<input id="B" class="form-control col-md-12" type="text" name="ch2" placeholder="B" required> <br>
+<input id="C" class="form-control col-md-12" type="text" name="ch3" placeholder="C" required> <br>
+<input id="D" class="form-control col-md-12" type="text" name="ch4" placeholder="D" required> <br>
+
+</div>
