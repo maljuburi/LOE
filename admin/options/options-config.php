@@ -7,15 +7,16 @@ function LOE_admin_menu(){
 		// page title
 		'LOE Theme Options',
 		// Menu title
-		'Theme Options',
+		'LOE Options',
 		// capability
 		'manage_options',
 		// Page Slug
 		'LOE_theme_options',
 		// callback function to generate page
-		'LOE_quiz_option'
+		'LOE_quiz_option',
+		// custom icon
+		'dashicons-admin-tools'
 		// Other Options can be added:
-			// custom icon
 			// the position of the menu
 		);
 

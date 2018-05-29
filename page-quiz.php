@@ -27,12 +27,13 @@ if (!empty($results)){
 		// loop to check answers
 		for($j=1; $j <= count($results); $j++){
 			
+			$question[$j-1] = $results[$j-1]->question;
+			$ans[$j-1] = $results[$j-1]->answer;
 			if(isset($_POST["choice$j"])){
 
-				$selected = $_POST["choice$j"];
-				$ans = $results[$j-1]->answer;
+				$selected[$j-1] = $_POST["choice$j"];
 	
-				if($selected != $ans){
+				if($selected[$j-1] != $ans[$j-1]){
 					$resultGrade = $resultGrade -1;
 				}
 
@@ -79,6 +80,8 @@ if (!empty($results)){
 			</div>
 
 
+
+		
 			<!-- Quiz Instructions -->
 			<div class="col-md-4 sidebar">
 				<div class="quiz-tips">
