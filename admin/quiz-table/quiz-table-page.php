@@ -12,6 +12,7 @@
         <th>Question</th>
         <th>Choices</th> 
         <th>Answer</th>
+        <th>&#9998; Edit</th>
       </tr>
       <?php
       if(!empty($results)){
@@ -31,6 +32,7 @@
               </ul>
             </td>
             <td class="data_td"><?php echo $result->answer ?></td>
+            <td class="data_td text-center"><a href="#" data-id="<?php echo $result->id ?>" class="btn btn-edit btn-sm">&#9998; Edit</a></td>
           </tr>
         <?php } ?>
           

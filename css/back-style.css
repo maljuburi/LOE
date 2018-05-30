@@ -45,7 +45,7 @@
   border: 1px solid rgba(0, 0, 0, 0.2); }
 
 .data_td {
-  vertical-align: top;
+  vertical-align: middle;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.5em; }
   .data_td ul {
@@ -63,5 +63,15 @@
   .header_tr th {
     padding: 0.5em;
     border: 1px solid #FFFFFF; }
+
+.btn-edit {
+  background: #1b4c65;
+  color: white;
+  border-radius: 0.3em; }
+  .btn-edit:hover {
+    opacity: 0.9;
+    color: white; }
+  .btn-edit:visited {
+    color: white; }
 
 /*# sourceMappingURL=back-style.css.map */

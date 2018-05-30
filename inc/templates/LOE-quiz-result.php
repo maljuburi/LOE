@@ -5,14 +5,16 @@
     if(!empty($selected[$r])){
       if($selected[$r] === $ans[$r]){
         $ansStyle = "text-success";
+        $styleSign = "&#10003;";
       }else{
         $ansStyle = "text-danger";
+        $styleSign = "&#10007;";
       }
       
       ?>
       <div class="question-wrapper">
         <p><strong><?php echo $r+1 ?>: <?php echo $question[$r]; ?> </strong></p>
-        <p>Selected : <span class="<?php echo $ansStyle; ?>"><?php echo $selected[$r]; ?></span></p>
+        <p>Selected : <span class="<?php echo $ansStyle; ?>"><?php echo $selected[$r]; ?> <span class="display-4"><?php echo $styleSign ?></span></span></p>
         <p>Correct Answer : <?php echo $ans[$r]; ?></p>
       </div>
     <?php }else{ ?>
