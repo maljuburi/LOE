@@ -41,9 +41,9 @@ function LOE_admin_menu(){
 		// Parent Slug
 		'LOE_theme_options',
 		// Page title
-		'Quiz Table',
+		'Manage Quizes',
 		// Menu title
-		'Display Quizes',
+		'Manage Quizes',
 		// capability
 		'manage_options',
 		// Sub page Slug

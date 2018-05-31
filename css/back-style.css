@@ -65,13 +65,29 @@
     border: 1px solid #FFFFFF; }
 
 .btn-edit {
-  background: #1b4c65;
+  background: #0275D8;
   color: white;
-  border-radius: 0.3em; }
+  border-radius: 0.3em;
+  opacity: 0.8;
+  border: 1px solid white;
+  box-shadow: 0 0 0.2em black; }
   .btn-edit:hover {
-    opacity: 0.9;
+    opacity: 1;
     color: white; }
   .btn-edit:visited {
+    color: white; }
+
+.btn-delete {
+  background: #D9534F;
+  color: white;
+  border-radius: 0.3em;
+  opacity: 0.8;
+  border: 1px solid white;
+  box-shadow: 0 0 0.2em black; }
+  .btn-delete:hover {
+    opacity: 1;
+    color: white; }
+  .btn-delete:visited {
     color: white; }
 
 /*# sourceMappingURL=back-style.css.map */
