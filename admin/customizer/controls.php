@@ -59,7 +59,7 @@ $wp_customize->add_control('slider_heading2', array(
 	));
 
 
-// image 1 text
+// image 2 text
 $wp_customize->add_control('slider_text2', array(
 
 	'label'				=>	__('Image Text #2', 'LOE'),
@@ -68,6 +68,47 @@ $wp_customize->add_control('slider_text2', array(
 	'priority'			=>	6
 
 	));
+
+// image 3
+$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'slider_image3', array(
+
+	'label'				=>	__('Slider Image #3', 'LOE'),
+	'section'			=>	'slider',
+	'settings'			=>	'slider_image3',
+	'priority'			=>	7
+
+
+	)));
+
+
+// image 3 heading
+$wp_customize->add_control('slider_heading3', array(
+
+	'label'				=>	__('Image Heading #3', 'LOE'),
+	'section'			=>	'slider',
+	'settings'			=>	'slider_heading3',
+	'priority'			=>	8
+
+
+	));
+
+
+// image 3 text
+$wp_customize->add_control('slider_text3', array(
+
+	'label'				=>	__('Image Text #3', 'LOE'),
+	'section'			=>	'slider',
+	'settings'			=>	'slider_text3',
+	'priority'			=>	9
+
+	));
+
+
+
+
+
+
+
 
 
 // header background color

@@ -66,6 +66,12 @@ function set_nav_location($name, $loc){
 				'menu-item-parent-id' => $LevelsItem,
 				'menu-item-status'	=> 'publish'
 			));
+
+			wp_update_nav_menu_item($menu_id, 0, array(
+				'menu-item-title'	=> __('Contact'),
+				'menu-item-url'		=> home_url('/Contact'),
+				'menu-item-status'	=> 'publish'
+			));
 		}else{
 
 			// Delete Quiz Page if Added to Menu

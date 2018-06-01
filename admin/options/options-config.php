@@ -15,7 +15,8 @@ function LOE_admin_menu(){
 		// callback function to generate page
 		'LOE_quiz_option',
 		// custom icon
-		'dashicons-admin-tools'
+		'dashicons-admin-tools',
+		99
 		// Other Options can be added:
 			// the position of the menu
 		);
@@ -51,6 +52,7 @@ function LOE_admin_menu(){
 		// Callback function to generate the page
 		'LOE_quiz_table'
 	);
+
 
 
 

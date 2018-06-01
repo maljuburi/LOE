@@ -5,6 +5,7 @@
  */
 function rd_user_id_column( $columns ) {
 	$columns['user_id'] = 'ID';
+	echo $columns;
 	return $columns;
 }
 
