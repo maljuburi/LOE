@@ -98,7 +98,7 @@ function update_data(){
 
 
 
-<?php echo $success ?>
+<?php if(isset($success)){echo $success;} ?>
 <div class="wrapper">
   <h3 class="header"><?php echo get_admin_page_title(); ?></h3>
   <div class="container" style="overflow-x: auto;">
