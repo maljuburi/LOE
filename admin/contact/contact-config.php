@@ -4,7 +4,7 @@ function LOE_contact_form_custom_post(){
     $labels = array(
         'name'              => 'Messages',
         'singular_name'     => 'Message',
-        'menu_name'         => 'LOE Inbox',
+        'menu_name'         => 'Inbox',
         'menu_admin_bar'    => 'Message',
         'edit_item'         => 'Sorry, you cannot edit messages. You can only delete them.'
     );
@@ -21,7 +21,7 @@ function LOE_contact_form_custom_post(){
         'map_meta_cap' => true,
         'hierarchical'      => false,
         'menu_position'     => 100,
-        'menu_icon'         => 'dashicons-email-alt',
+        'menu_icon'         => get_template_directory_uri().'/img/icon.png',
         'supports'          => false
     );
     register_post_type( 'loe_contact', $args );

@@ -7,7 +7,7 @@ function LOE_admin_menu(){
 		// page title
 		'LOE Theme Options',
 		// Menu title
-		'LOE Options',
+		'Options',
 		// capability
 		'manage_options',
 		// Page Slug
@@ -15,7 +15,7 @@ function LOE_admin_menu(){
 		// callback function to generate page
 		'LOE_quiz_option',
 		// custom icon
-		get_template_directory().'/img/icon.png',
+		get_template_directory_uri().'/img/icon.png',
 		// the position of the menu
 		99
 		);
