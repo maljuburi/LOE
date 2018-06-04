@@ -7,10 +7,8 @@ $topic = $_POST['topic'];
 
 global $wpdb;
 $table_name = $wpdb->prefix . "quiz";
-
-$results = $wpdb->get_results("
-SELECT * FROM $table_name WHERE topic_level='$level' AND topic='$topic';
-");
+$query = "SELECT * FROM $table_name WHERE topic_level='$level' AND topic='$topic'";
+$results = $wpdb->get_results(htmlspecialchars_decode($query));
 
 $totalGrade = count($results);
 $resultGrade = count($results);

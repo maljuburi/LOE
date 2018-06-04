@@ -44,10 +44,11 @@ template name: Beginner
 				$level = get_the_title($post->post_parent);
 				global $wpdb;
 				$table_name = $wpdb->prefix . "quiz";
-
-				$results = $wpdb->get_results("
-				SELECT * FROM $table_name WHERE topic_level='$level' AND topic='$topic';
-				");
+				
+				if($wpdb->get_var("SHOW TABLES LIKE '$table_name'") == $table_name){
+					$query = "SELECT * FROM $table_name WHERE topic_level='$level' AND topic='$topic'";
+					$results = $wpdb->get_results(htmlspecialchars_decode($query));
+				}
 				
 				?>
 
