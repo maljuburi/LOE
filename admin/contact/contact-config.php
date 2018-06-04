@@ -21,7 +21,7 @@ function LOE_contact_form_custom_post(){
         'map_meta_cap' => true,
         'hierarchical'      => false,
         'menu_position'     => 100,
-        'menu_icon'         => get_template_directory_uri().'/img/icon.png',
+        'menu_icon'         => get_template_directory_uri().'/img/icon.svg',
         'supports'          => false
     );
     register_post_type( 'loe_contact', $args );

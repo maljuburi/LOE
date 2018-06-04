@@ -18,7 +18,7 @@
 		<div class="container">
 			<div class="row">
 
-					<div class="brand display-4 col-xs-12 col-md-3"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
+					<div class="brand display-4 col-xs-12 col-md-3"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(). '/img/icon.svg' ?>" alt="Logo Image"> <?php bloginfo('name'); ?></a></div>
 
 					<button class="toggler-btn">
 						<i class="fa fa-bars"></i>

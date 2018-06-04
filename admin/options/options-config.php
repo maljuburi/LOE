@@ -15,7 +15,7 @@ function LOE_admin_menu(){
 		// callback function to generate page
 		'LOE_quiz_option',
 		// custom icon
-		get_template_directory_uri().'/img/icon.png',
+		get_template_directory_uri().'/img/icon.svg',
 		// the position of the menu
 		99
 		);
