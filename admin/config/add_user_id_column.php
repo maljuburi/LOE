@@ -9,7 +9,7 @@ function rd_user_id_column( $columns ) {
 	return $columns;
 }
 
- 
+
 /*
  * Column content
  */

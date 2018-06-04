@@ -15,10 +15,9 @@ function LOE_admin_menu(){
 		// callback function to generate page
 		'LOE_quiz_option',
 		// custom icon
-		'dashicons-admin-tools',
+		get_template_directory().'/img/icon.png',
+		// the position of the menu
 		99
-		// Other Options can be added:
-			// the position of the menu
 		);
 
 	// Adding Submenu to the above main menu

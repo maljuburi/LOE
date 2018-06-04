@@ -6,6 +6,7 @@ function LOE_contact_form_custom_post(){
         'singular_name'     => 'Message',
         'menu_name'         => 'LOE Inbox',
         'menu_admin_bar'    => 'Message',
+        'edit_item'         => 'Sorry, you cannot edit messages. You can only delete them.'
     );
 
 

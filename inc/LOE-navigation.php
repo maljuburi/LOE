@@ -89,10 +89,7 @@ function set_nav_location($name, $loc){
 			}
 
 			
-			
-			
-
-			
+				
 			
 		}	
 
@@ -101,7 +98,6 @@ function set_nav_location($name, $loc){
 		if( !$menu_exists){
 			$menu_id = wp_create_nav_menu($name);
 			$menu = get_term_by( 'name', $name, 'nav_menu' );
-	
 		}
 	}
 
