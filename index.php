@@ -5,7 +5,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 blog">
-			<h1 class="blog-title display-1">Blog</h1>
+				<h1 class="blog-title display-1">Blog</h1>
 			
 				<?php if(have_posts()) : ?>
 					<?php while (have_posts()) : the_post(); ?>

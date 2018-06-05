@@ -276,6 +276,20 @@ textarea {
 .form-submit {
   width: 5rem; }
 
+.blog .wp-caption {
+  margin-bottom: 2em;
+  width: 100% !important; }
+  .blog .wp-caption img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0.2em black; }
+.blog .wp-caption-text {
+  padding: 0 0.5em;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0 1em !important; }
+
 .blog-title {
   padding: 0.5em 0;
   margin: 1rem 0;
@@ -359,10 +373,14 @@ textarea {
   padding: 3px; }
 
 .attachment {
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+  width: 100%; }
   .attachment img {
     width: 100%;
-    height: auto; }
+    height: auto;
+    border-radius: 0.5em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0.2em black; }
 
 .contact-bg {
   background-color: #316dad;
