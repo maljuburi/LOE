@@ -22,6 +22,15 @@ template name: Intermediate
 				 Add the template you need below
 				 ================================== -->
 
+				<?php
+					while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
+							
+									<?php the_content(); ?> <!-- Page Content -->
+							
+
+					<?php
+					endwhile;
+					?>			
 			
 			</div>
 
