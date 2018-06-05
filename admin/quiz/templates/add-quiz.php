@@ -1,7 +1,49 @@
 <?php
 
 if(isset($_POST['submit'])){
-  insert_data();
+  
+  $img = $_FILES['img'];
+  $imgName = $img['name'];
+  $imgTmpName = $img['tmp_name'];
+  $imgSize = $img['size'];
+  $imgError = $img['error'];
+  $imgType = $img['type'];
+  
+  if($imgName != ""){
+    $imgSplit = explode('.',$imgName);
+    $imgExt = strtolower(end($imgSplit));
+    $allowed = array('jpg','jpeg','png');
+  
+    if(in_array($imgExt, $allowed)){
+      if($imgError===0){
+  
+        if($imgSize <= 5000000){
+          $newImgName = uniqid("", false).".".$imgExt;
+          $imgDestination = get_template_directory().'/img/quiz-uploads/'.$newImgName;
+          move_uploaded_file($imgTmpName, $imgDestination);
+          insert_data($newImgName);
+        
+
+        }else{
+          echo "File is bigger than 5MB";
+          return;
+        }
+  
+      }else{
+        echo "There was an error uploading the file!";
+        return;
+      }
+  
+  
+    }else{
+      echo "You cannot upload files of this type!";
+      return;
+    }
+  }else{
+    $newImgName = "";
+    insert_data($newImgName);
+  }
+
   $success = '<div class="alert alert-success alert-dismissible fade show" role="alert">
                 Quiz has been added <strong>successfully.</strong>
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -10,11 +52,13 @@ if(isset($_POST['submit'])){
               </div>';
 }
 
-function insert_data(){
+function insert_data($img){
+  
   $lvlAndTopic = $_POST['topic'];
   $splitLvl = explode('-',$lvlAndTopic);
   $level = $splitLvl[0];
   $topic = $splitLvl[1];
+  $image = $img;
   $question = $_POST['question'];
   $ch1 = $_POST['ch1'];
   $ch2 = $_POST['ch2'];
@@ -38,17 +82,18 @@ function insert_data(){
 }
   
   global $wpdb;
-  $wpdb->insert('wp_quiz', array(
-    'topic_level' => $level,
-    'topic' => $topic,
-    'question' => $question,
-    'ch1' => $ch1,
-    'ch2' => $ch2,
-    'ch3' => $ch3,
-    'ch4' => $ch4,
-    'answer' => $answer
-));
 
+  $result = $wpdb->insert('wp_quiz', array(
+    'topic_level'   => $level,
+    'topic'         => $topic,
+    'img'           => $image,
+    'question'      => $question,
+    'ch1'           => $ch1,
+    'ch2'           => $ch2,
+    'ch3'           => $ch3,
+    'ch4'           => $ch4,
+    'answer'        => $answer
+  ));
 }
 
 ?>
@@ -60,11 +105,12 @@ function insert_data(){
   <div class="wrapper">
     <h3 class="header">Add Quiz</h3>
     <div class="container">
-        <form action="" name="add_quiz" method="post">
+        <form action="" name="add_quiz" method="post" enctype="multipart/form-data">
           
         <?php
           
           require_once( get_template_directory() . '/admin/quiz/templates/_select_topic.php');
+          require_once( get_template_directory() . '/admin/quiz/templates/_upload_image.php');
           require_once( get_template_directory() . '/admin/quiz/templates/_quiz_question.php');
           require_once( get_template_directory() . '/admin/quiz/templates/_question_choices.php');
           require_once( get_template_directory() . '/admin/quiz/templates/_answer.php');

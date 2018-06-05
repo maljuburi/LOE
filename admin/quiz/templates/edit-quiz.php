@@ -9,6 +9,7 @@ if(isset($_POST['quizId'])){
     
     $edit_level = $results[0]->topic_level;
     $edit_topic = $results[0]->topic;
+    $edit_image = $results[0]->img;
     $edit_question = $results[0]->question;
     $edit_ch1 = $results[0]->ch1;
     $edit_ch2 = $results[0]->ch2;
@@ -23,10 +24,11 @@ if(isset($_POST['quizId'])){
     <div class="wrapper">
     <h3 class="header">Edit Quiz</h3>
     <div class="container">
-        <form action="admin.php?page=LOE_quiz_table_page" method="post">
+        <form action="admin.php?page=LOE_quiz_table_page" method="post" enctype="multipart/form-data">
             
         <?php
             require_once( get_template_directory() . '/admin/quiz/templates/_select_topic.php');
+            require_once( get_template_directory() . '/admin/quiz/templates/_upload_image.php');
             require_once( get_template_directory() . '/admin/quiz/templates/_quiz_question.php');
             require_once( get_template_directory() . '/admin/quiz/templates/_question_choices.php');
             require_once( get_template_directory() . '/admin/quiz/templates/_answer.php');
