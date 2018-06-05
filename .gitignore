@@ -1,0 +1,5 @@
+/img/quiz-uploads/*.jpg
+/img/quiz-uploads/*.jpeg
+/img/quiz-uploads/*.png
+sass/
+.sass-cache/
