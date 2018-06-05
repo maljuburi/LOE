@@ -68,7 +68,8 @@ if (!empty($results)){
 			<div class="col-md-8 page">
 
 			
-				<h4 class="<?php echo $_POST['level'] ?>-quiz-title display-4"> <a href="<?php echo $_POST['level'] ?>"><?php echo $_POST['level'] ?></a><?php echo " | ".$_POST['topic']." | Quiz"; ?></h4>
+				
+				<h4 class="<?php echo $_POST['level'] ?>-quiz-title display-4"> <a href="<?php echo $_POST['level'] ?>"><?php echo $_POST['level'] ?></a> | <a href="<?php echo $_POST['level']."/".$_POST['topic'] ?>"><?php echo $_POST['topic'] ?></a> | Quiz</h4>
 				<!-- =========================
 				 Add the template you need below
 				 ================================== -->

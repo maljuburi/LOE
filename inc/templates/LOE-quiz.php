@@ -10,6 +10,7 @@
         <div class="question-wrapper">
           <label class="question-title">Question <?php echo $i+1 ?>: </label>
           <p><?php echo $results[$i]->question  ?></p>
+          <?php if(!empty($results[$i]->img)){ ?><img class="quiz-image" src="<?php echo get_template_directory_uri()."/img/quiz-uploads/".$results[$i]->img ?>" alt="quiz image"><?php } ?>
           
           A . <input type="radio" name="choice<?php echo $i+1 ?>" value="<?php echo $results[$i]->ch1 ?>" id="ch<?php echo ($i*4)+1 ?>"> <label for="ch<?php echo ($i*4)+1 ?>"><?php echo $results[$i]->ch1 ?></label><br>
           B . <input type="radio" name="choice<?php echo $i+1 ?>" value="<?php echo $results[$i]->ch2 ?>" id="ch<?php echo ($i*4)+2 ?>"> <label for="ch<?php echo ($i*4)+2 ?>"><?php echo $results[$i]->ch2 ?></label><br>
