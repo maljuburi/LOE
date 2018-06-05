@@ -1,0 +1,76 @@
+
+.header
+	background: $themeColor
+
+// navigation menu
+
+.main-menu
+	font-size: 14px
+
+.toggler-btn
+	position: absolute
+	background: #292b2c
+	color: white
+	top: 10px
+	right: 0
+	border: 1px solid rgba(255,255,255,0.1)
+	border-radius: 3px
+	padding: 0.3rem 0.7rem 0.2rem 0.7rem
+	display: none
+
+
+.dropdown-menu
+	font-size: inherit
+	display: none
+	background: $themeColor
+	border: none
+	border-radius: 0
+	border-radius: 0 0 0.5rem 0.5rem
+	margin: 0
+	padding: 0
+	left: inherit
+	right: 0
+	.nav-link
+		padding: 0.5rem
+		border-bottom: 1px solid rgba(255,255,255,0.1)
+
+.sub-dropdown > .dropdown-menu
+	position: relative
+	padding-left: 0.5rem
+	font-size: 97%
+
+
+
+.dropdown,
+.sub-dropdown
+	position: relative
+
+
+
+.nav-link
+	padding: 1rem
+	color: rgba(255,255,255,0.7) !important
+	&:hover
+		cursor: pointer
+		color: rgba(255,255,255,0.5)
+	&:focus
+		color: $lightFont
+
+.caret
+	padding: 0.3rem 0.5rem
+	float: right
+	+transition(0.2s)
+
+.fa-bars
+	font-size: 1.8rem
+
+
+
+// logo
+.brand
+	font-weight: 100
+	padding: 1rem 0
+	a
+		color: white
+		&:hover
+			text-decoration: none

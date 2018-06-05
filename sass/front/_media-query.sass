@@ -1,0 +1,73 @@
+// Small Screen
+@media screen and (max-width: 767px)
+
+	.toggler-btn
+		display: block
+
+
+	.main-menu
+		padding: 0
+		display: none
+
+	.nav,
+	.nav-item,
+	.nav-link
+		display: block
+		width: 100%
+		padding: 0
+	.nav-link
+		padding: 0.3rem
+		border-bottom: 1px solid rgba(255,255,255,0.1)
+
+	.dropdown-menu
+		text-align: left
+		background: inherit
+		overflow: hidden
+		width: 100%
+		position: relative
+		.nav-link
+			padding: 0.3rem
+
+
+
+	.dropdown-menu,
+	.sub-dropdown > .dropdown-menu
+		padding-left: 3%
+
+
+
+
+	.sidebar-module
+		padding: 0
+		margin-bottom: 2rem
+
+	.quiz-widget
+		padding: 0
+		margin-top: 1rem
+		border-top: 1px solid $darkborder
+		text-align: center
+		.take-quiz-btn
+			width: 100%
+			
+	.quiz-tips
+		border-left: none
+		text-align: center
+
+
+// Extra Small Screen
+@media screen and (max-width: 575px)
+	.carousel-caption
+		h1
+			font-size: 1.8rem
+
+	.copyright
+		border: none
+		border-top: 1px solid rgba(255,255,255,0.1)
+		text-align: center
+
+	.footer-nav
+		text-align: center
+		li
+			li
+				list-style: none
+
