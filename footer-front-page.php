@@ -33,7 +33,8 @@
 					)); ?>
 			
 			<div class="col-sm-3 d-flex copyright">
-				<p>All Rights Reserved | LOE &copy;2017</p>
+				<p>&copy; Copyright 2017-<?php echo date("Y"); ?> . All rights reserved.
+				Developed by <a href="https://github.com/maljuburi">Muhammad Al Juburi</a></p>
 			</div>
 			
 		</div>

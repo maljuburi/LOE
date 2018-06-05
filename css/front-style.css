@@ -35,7 +35,9 @@ ul {
   color: #FFFFFF; }
 
 .header {
-  background: #181A1F; }
+  z-index: 1;
+  background: #181A1F;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
 .main-menu {
   font-size: 14px; }
@@ -199,12 +201,13 @@ ul {
   margin-right: 0.2rem; }
 
 footer {
-  background: #181A1F;
-  border-top: 1px solid rgba(255, 255, 255, 0.2); }
+  z-index: 1;
+  background: #181A1F; }
 
 .copyright {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.5);
   align-items: center;
   justify-content: center;
   padding: 0.5rem;

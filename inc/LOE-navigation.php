@@ -99,6 +99,17 @@ function set_nav_location($name, $loc){
 			$menu_id = wp_create_nav_menu($name);
 			$menu = get_term_by( 'name', $name, 'nav_menu' );
 		}
+
+		$quiz = get_page_by_path("quiz");
+		$menu_name = wp_get_nav_menu_object( $name );
+		$menu_items = wp_get_nav_menu_items( $menu_name);
+		// var_dump($menu_items);
+		foreach($menu_items as $item){
+			if($item->title == "Quiz" || $item->title == "quiz"){
+				echo $item->title;
+				wp_delete_post($item->db_id);
+			}
+		}
 	}
 
 	//then you set the wanted theme location
