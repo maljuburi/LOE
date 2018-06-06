@@ -1,4 +1,7 @@
-/img/quiz-uploads/*.jpg
-/img/quiz-uploads/*.jpeg
-/img/quiz-uploads/*.png
+/assets/quiz-uploads/image/*.jpg
+/assets/quiz-uploads/image/*.jpeg
+/assets/quiz-uploads/image/*.png
+/assets/quiz-uploads/audio/*.mp3
+/assets/quiz-uploads/audio/*.wav
+/assets/quiz-uploads/video/*.mp4
 .sass-cache/

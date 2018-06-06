@@ -53,7 +53,7 @@
     padding-left: 1em;
     margin: 0;
     box-sizing: border-box; }
-    .data_td ul li {
+    .data_td ul .table-choices {
       margin: 0;
       list-style-type: upper-alpha; }
 
@@ -94,5 +94,11 @@
   border-radius: 0.5em;
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 0.3em black; }
+
+.add-file {
+  margin-bottom: 1em;
+  margin-left: 1em;
+  max-width: 200px;
+  font-size: 0.8em; }
 
 /*# sourceMappingURL=back-style.css.map */

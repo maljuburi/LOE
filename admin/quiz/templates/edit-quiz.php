@@ -10,6 +10,8 @@ if(isset($_POST['quizId'])){
     $edit_level = $results[0]->topic_level;
     $edit_topic = $results[0]->topic;
     $edit_image = $results[0]->img;
+    $edit_audio = $results[0]->aud;
+    $edit_video = $results[0]->vid;
     $edit_question = $results[0]->question;
     $edit_ch1 = $results[0]->ch1;
     $edit_ch2 = $results[0]->ch2;
