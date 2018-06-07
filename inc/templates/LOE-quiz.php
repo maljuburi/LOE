@@ -9,6 +9,8 @@
 
         <div class="question-wrapper">
           <label class="question-title">Question <?php echo $i+1 ?>: </label>
+          <small class="float-right text-muted"><?php echo $results[$i]->grade ?> Points</small>
+          
           <p><?php echo $results[$i]->question  ?></p>
           <?php if(!empty($results[$i]->img)){ ?><img class="quiz-image" src="<?php echo get_template_directory_uri()."/img/quiz-uploads/".$results[$i]->img ?>" alt="quiz image"><?php } ?>
           
@@ -20,7 +22,7 @@
           <input type="hidden" name="level" value="<?php echo $level  ?>">
 					<input type="hidden" name="topic" value="<?php echo $topic  ?>">
         </div>
-      
+          
         <?php
               }
         

@@ -10,12 +10,21 @@ $wp_customize->add_section('slider',array(
 
 	));
 
+// Level Cards Section
+$wp_customize->add_section('levels_cards',array(
+
+	'title'					=>	__('Levels Cards','LOE'),
+	'description'			=>	'Options to edit level cards texts',
+	'priority'				=>	201
+
+	));
+
 // LOE Theme Colors
 $wp_customize->add_section('theme_colors',array(
 
 	'title'					=>	__('Theme Colors','LOE'),
 	'description'			=>	'Options to edit the theme colors',
-	'priority'				=>	201
+	'priority'				=>	202
 
 	));
 

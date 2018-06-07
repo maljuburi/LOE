@@ -17,6 +17,7 @@ if($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name) {
 		ch3 varchar(50) NOT NULL,
 		ch4 varchar(50) NOT NULL,
 		answer varchar(50) NOT NULL,
+		grade int(6) NOT NULL,
 		PRIMARY KEY (id)
 		)";
 

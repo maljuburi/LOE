@@ -162,6 +162,7 @@ function insert_data($media){
   $ch3 = $_POST['ch3'];
   $ch4 = $_POST['ch4'];
   $selectedAns = $_POST['answer'];
+  $grade = $_POST['grade'];
 
   switch ($selectedAns) {
     case "A":
@@ -191,7 +192,8 @@ function insert_data($media){
     'ch2'           => $ch2,
     'ch3'           => $ch3,
     'ch4'           => $ch4,
-    'answer'        => $answer
+    'answer'        => $answer,
+    'grade'         => $grade
   ));
 }
 
@@ -213,6 +215,7 @@ function insert_data($media){
           require_once( get_template_directory() . '/admin/quiz/templates/_quiz_question.php');
           require_once( get_template_directory() . '/admin/quiz/templates/_question_choices.php');
           require_once( get_template_directory() . '/admin/quiz/templates/_answer.php');
+          require_once( get_template_directory() . '/admin/quiz/templates/quiz_grade.php');
         ?>
         <div class="form-group quiz-form-group row">
           <button type="submit" name="submit" class="btn quiz-btn btn-success mb-2">Add Quiz</button>

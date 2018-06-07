@@ -232,6 +232,7 @@ if(isset($_POST['update_submit'])){
     $ch3 = $_POST['ch3'];
     $ch4 = $_POST['ch4'];
     $selectedAns = $_POST['answer'];
+    $grade = $_POST['grade'];
 
     switch ($selectedAns) {
         case "A":
@@ -283,7 +284,8 @@ if(isset($_POST['update_submit'])){
       'ch2'         => $ch2,
       'ch3'         => $ch3,
       'ch4'         => $ch4,
-      'answer'      => $answer
+      'answer'      => $answer,
+      'grade'       => $grade
     ), array('id'=> $quiz_id));
 
 }
@@ -304,6 +306,7 @@ if(isset($_POST['update_submit'])){
         <th>Question</th>
         <th>Choices</th> 
         <th>Answer</th>
+        <th>Grade</th>
         <th>&#9998; Edit</th>
         <th>&#10008; Delete</th>
       </tr>
@@ -331,6 +334,7 @@ if(isset($_POST['update_submit'])){
               </ul>
             </td>
             <td class="data_td"><?php echo $result->answer ?></td>
+            <td class="data_td"><?php echo $result->grade ?></td>
             <td class="data_td text-center">
               <form action="admin.php?page=LOE_theme_options" method="post">
                 <input type="hidden" name="quizId" value="<?php echo $result->id ?>">

@@ -101,10 +101,139 @@ $wp_customize->add_control('slider_text3', array(
 	'settings'			=>	'slider_text3',
 	'priority'			=>	9
 
+));
+
+
+
+
+// Beginner Controls
+// =============================================================
+// Beginner Card header
+$wp_customize->add_control('beginner_card_header', array(
+
+	'label'				=>	__('Beginner Header', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'beginner_heading',
+	'priority'			=>	1
+
 	));
 
+// Beginner Card Title
+$wp_customize->add_control('beginner_card_title', array(
+
+	'label'				=>	__('Beginner Title', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'beginner_title',
+	'priority'			=>	2
+
+	));
+
+// Beginner Card caption
+$wp_customize->add_control('beginner_card_caption', array(
+
+	'label'				=>	__('Beginner Caption', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'beginner_caption',
+	'priority'			=>	3
+
+	));
+
+// Beginner Card Button
+$wp_customize->add_control('beginner_card_button', array(
+
+	'label'				=>	__('Beginner Button', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'beginner_button',
+	'priority'			=>	4
+
+	));
+// =============================================================
 
 
+
+// Intermediate Controls
+// =============================================================
+// Intermediate Card header
+$wp_customize->add_control('intermediate_card_header', array(
+
+	'label'				=>	__('Intermediate Header', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'intermediate_heading',
+	'priority'			=>	5
+
+	));
+
+// Intermediate Card Title
+$wp_customize->add_control('intermediate_card_title', array(
+
+	'label'				=>	__('Intermediate Title', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'intermediate_title',
+	'priority'			=>	6
+
+	));
+
+// Intermediate Card caption
+$wp_customize->add_control('intermediate_card_caption', array(
+
+	'label'				=>	__('Intermediate Caption', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'intermediate_caption',
+	'priority'			=>	7
+
+	));
+
+// Intermediate Card Button
+$wp_customize->add_control('intermediate_card_button', array(
+
+	'label'				=>	__('Intermediate Button', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'intermediate_button',
+	'priority'			=>	8
+
+	));
+// =============================================================
+
+
+
+// Advance Controls
+// =============================================================
+// Advance Card header
+$wp_customize->add_control('advance_card_header', array(
+
+	'label'				=>	__('Advance Header', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'advance_heading',
+	'priority'			=>	9
+	));
+
+// Advance Card Title
+$wp_customize->add_control('advance_card_title', array(
+
+	'label'				=>	__('Advance Title', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'advance_title',
+	'priority'			=>	10
+	));
+
+// Advance Card caption
+$wp_customize->add_control('advance_card_caption', array(
+
+	'label'				=>	__('Advance Caption', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'advance_caption',
+	'priority'			=>	11
+	));
+
+// Advance Card Button
+$wp_customize->add_control('advance_card_button', array(
+
+	'label'				=>	__('Advance Button', 'LOE'),
+	'section'			=>	'levels_cards',
+	'settings'			=>	'advance_button',
+	'priority'			=>	12
+	));
+// =============================================================
 
 
 

@@ -9,15 +9,13 @@ if(isset($_POST['quizId'])){
     
     $edit_level = $results[0]->topic_level;
     $edit_topic = $results[0]->topic;
-    $edit_image = $results[0]->img;
-    $edit_audio = $results[0]->aud;
-    $edit_video = $results[0]->vid;
     $edit_question = $results[0]->question;
     $edit_ch1 = $results[0]->ch1;
     $edit_ch2 = $results[0]->ch2;
     $edit_ch3 = $results[0]->ch3;
     $edit_ch4 = $results[0]->ch4;
     $edit_ans = $results[0]->answer;
+    $edit_grade = $results[0]->grade;
 }
 ?>
 
@@ -30,10 +28,11 @@ if(isset($_POST['quizId'])){
             
         <?php
             require_once( get_template_directory() . '/admin/quiz/templates/_select_topic.php');
-            require_once( get_template_directory() . '/admin/quiz/templates/_upload_image.php');
+            require_once( get_template_directory() . '/admin/quiz/templates/_upload_media.php');
             require_once( get_template_directory() . '/admin/quiz/templates/_quiz_question.php');
             require_once( get_template_directory() . '/admin/quiz/templates/_question_choices.php');
             require_once( get_template_directory() . '/admin/quiz/templates/_answer.php');
+            require_once( get_template_directory() . '/admin/quiz/templates/quiz_grade.php');
         ?>
         <div class="form-group quiz-form-group row">
             <input type="hidden" name="id" value="<?php echo $quizId ?>">
