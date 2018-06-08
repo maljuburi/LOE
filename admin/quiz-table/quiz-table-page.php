@@ -356,8 +356,8 @@ if(isset($_POST['update_submit'])){
         <?php } ?>
           
     <?php } else { ?>
-      <tr>
-        <td class="data_td text-center" colspan="10">There are no quizes available to display</td>
+      <tr class="data_tr">
+        <td class="data_td text-center" colspan="10">There isn't any quiz available to display</td>
       </tr>
     <?php }?>
 

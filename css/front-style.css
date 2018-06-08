@@ -174,7 +174,8 @@ ul {
   font-weight: 100; }
 
 .page {
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
   .page img {
     max-width: 100%;
     height: auto;
@@ -216,7 +217,7 @@ footer {
   color: rgba(255, 255, 255, 0.5);
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
+  padding: 2em 1em;
   border-left: 1px solid rgba(255, 255, 255, 0.1); }
 
 .footer-nav {
@@ -298,14 +299,15 @@ textarea {
   text-transform: uppercase; }
 
 .blog-post {
-  padding: 2rem 0;
+  padding: 1rem 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .post-title {
-  padding: 1rem 0;
-  margin: 1rem 0; }
-  .post-title a {
-    color: #0275D8; }
+  display: block;
+  padding: 0.5rem 0; }
+
+.single-title {
+  margin-top: 1.5em; }
 
 .blog-meta {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2); }
@@ -593,7 +595,8 @@ iframe {
 
 .quiz-wrapper {
   padding: 1em;
-  margin-top: 2em; }
+  margin-top: 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2); }
 
 .question-wrapper {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
