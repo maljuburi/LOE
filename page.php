@@ -8,7 +8,7 @@
 			<div class="col-md-8 page">
 
 			
-				<h2 class="page-title display-2"><?php the_title(); ?></h2>
+				<h2 class="page-title display-3"><?php the_title(); ?></h2>
 				
 				<!-- =========================
 				 Add the template you need below

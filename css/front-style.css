@@ -35,7 +35,7 @@ ul {
   color: #FFFFFF; }
 
 .header {
-  z-index: 1;
+  z-index: 1000;
   background: #181A1F;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
 
@@ -310,7 +310,26 @@ textarea {
 .blog-meta {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2); }
 
-.beginner-topic {
+.wp-video {
+  width: 100% !important;
+  border-radius: 0.5em;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  box-shadow: 0 0 0.3em black;
+  margin: 3em 0; }
+  .wp-video .wp-video-shortcode {
+    width: 100% !important; }
+    .wp-video .wp-video-shortcode video {
+      width: 100% !important;
+      height: auto !important; }
+
+iframe {
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  box-shadow: 0 0 0.3em black; }
+
+.Beginner-unit {
   background: #0275D8;
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -322,12 +341,36 @@ textarea {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
-.beginner-topic:hover {
+.Beginner-unit:hover {
   color: white;
   opacity: 0.9;
   text-decoration: none; }
 
-.intermediate-topic {
+.Beginner-topic {
+  background: #0275D8;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.Beginner-topic:hover {
+  color: white;
+  opacity: 0.9;
+  text-decoration: none; }
+
+.Beginner-link {
+  color: #0275D8; }
+
+.Beginner-link:hover {
+  color: #181A1F;
+  opacity: 0.5; }
+
+.Intermediate-unit {
   background: #439943;
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -339,12 +382,36 @@ textarea {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
-.intermediate-topic:hover {
+.Intermediate-unit:hover {
   color: white;
   opacity: 0.9;
   text-decoration: none; }
 
-.advance-topic {
+.Intermediate-topic {
+  background: #439943;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.Intermediate-topic:hover {
+  color: white;
+  opacity: 0.9;
+  text-decoration: none; }
+
+.Intermediate-link {
+  color: #439943; }
+
+.Intermediate-link:hover {
+  color: #181A1F;
+  opacity: 0.5; }
+
+.Advance-unit {
   background: #D9534F;
   border: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
@@ -356,10 +423,34 @@ textarea {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
-.advance-topic:hover {
+.Advance-unit:hover {
   color: white;
   opacity: 0.9;
   text-decoration: none; }
+
+.Advance-topic {
+  background: #D9534F;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+.Advance-topic:hover {
+  color: white;
+  opacity: 0.9;
+  text-decoration: none; }
+
+.Advance-link {
+  color: #D9534F; }
+
+.Advance-link:hover {
+  color: #181A1F;
+  opacity: 0.5; }
 
 .post-gallery {
   text-align: center; }
@@ -384,7 +475,10 @@ textarea {
 
 .contact-bg {
   background-color: #316dad;
-  background: url("http://www.melovewebdesign.com/wp-content/uploads/2014/03/Blurred_Background_12.jpg") no-repeat center center;
+  background-image: url("../assets/contact2.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   background-size: cover;
   color: white; }
 
@@ -502,7 +596,8 @@ textarea {
   margin-top: 2em; }
 
 .question-wrapper {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1em 0;
   margin-bottom: 1em; }
 
 .question-title {
@@ -511,6 +606,22 @@ textarea {
 
 .quiz-image {
   max-width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.2em black;
+  margin: 1em 0; }
+
+.quiz-video {
+  width: 100%;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5em;
+  box-shadow: 0 0 0.2em black;
+  margin: 1em 0; }
+
+.quiz-audio {
+  width: 100%;
+  display: block;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0.5em;
   box-shadow: 0 0 0.2em black;

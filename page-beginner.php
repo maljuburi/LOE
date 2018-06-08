@@ -7,17 +7,13 @@
 			<div class="col-md-8 page">
 
 			
-				<h2 class="page-title display-2"><?php the_title(); ?></h2>
+				<h2 class="page-title display-3"><?php the_title(); ?></h2>
 
 				<?php
-				$levelPage = 'beginner';
-				require (get_template_directory() . '/inc/templates/LOE-level-topics.php'); 
-				
-				
+				require (get_template_directory() . '/inc/templates/LOE-level-units.php'); 
 				?>
 			
 			</div>
-
 			<!-- sidebar div -->
 			<div class="col-md-4 sidebar">
 				<?php get_sidebar(); ?>

@@ -177,8 +177,7 @@ if(isset($_POST['update_submit'])){
           }
     
         }else{
-          echo "There was an error uploading the video!";
-          return;
+          echo "There was an error uploading the video! ";
         }
     
     
@@ -222,9 +221,10 @@ if(isset($_POST['update_submit'])){
 
     $quiz_id = $_POST['id'];
     $lvlAndTopic = $_POST['topic'];
-    $splitLvl = explode('-',$lvlAndTopic);
+    $splitLvl = explode('@',$lvlAndTopic);
     $level = $splitLvl[0];
-    $topic = $splitLvl[1];
+    $unit = $splitLvl[1];
+    $topic = $splitLvl[2];
     $mediaData = $media;
     $question = $_POST['question'];
     $ch1 = $_POST['ch1'];
@@ -275,6 +275,7 @@ if(isset($_POST['update_submit'])){
 
     $update = $wpdb->update($table_name, array(
       'topic_level' => $level,
+      'unit'       => $unit,
       'topic'       => $topic,
       'img'         => $mediaData['img'],
       'aud'         => $mediaData['aud'],
@@ -297,12 +298,13 @@ if(isset($_POST['update_submit'])){
 <?php if(isset($success)){echo $success;} ?>
 <div class="wrapper">
   <h3 class="header"><?php echo get_admin_page_title(); ?></h3>
-  <div class="container" style="overflow-x: auto;">
+  <div style="overflow-x: auto;">
     <table class="quizes_table" style="width:100%">
       <tr class="header_tr">
         <th>Level</th>
+        <th>Unit</th>
         <th>Topic</th>
-        <th>Image/Audio/Video</th>
+        <th>Image/Video/Audio</th>
         <th>Question</th>
         <th>Choices</th> 
         <th>Answer</th>
@@ -316,12 +318,13 @@ if(isset($_POST['update_submit'])){
         
           <tr class="data_tr">
             <td class="data_td"><?php echo $result->topic_level ?></td>
+            <td class="data_td"><?php echo $result->unit ?></td>
             <td class="data_td"><?php echo $result->topic ?></td>
             <td class="data_td text-center">
               <ul>
-                <li><?php if($result->img != ""){ ?>Image <br><img class="quiz_table_thumb" width="100" src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/image/". $result->img?>"> <?php }?></li>
-                <li><?php if($result->aud != ""){ ?>Audio <br><audio controls  class="quiz_table_thumb" style="width:100px" > <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/audio/". $result->aud ?>" type="audio/mpeg"> <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/audio/". $result->aud ?>" type="audio/wav"> </audio> <?php }?></li>
-                <li><?php if($result->vid != ""){ ?>Video <br><video controls class="quiz_table_thumb" width="100"> <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/video/". $result->vid ?>" type="video/mp4"> </video> <?php }?></li>
+                <?php if($result->img != ""){ ?> <li>Image <br><img class="quiz_table_thumb" width="100" src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/image/". $result->img?>"> <?php }?></li>
+                <?php if($result->vid != ""){ ?> <li>Video <br><video class="quiz_table_thumb" width="100" controls  > <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/video/". $result->vid ?>" type="video/mp4"> </video> <?php }?></li>
+                <?php if($result->aud != ""){ ?> <li>Audio <br><audio class="quiz_table_thumb" style="width: 100px" controls  > <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/audio/". $result->aud ?>" type="audio/mpeg"> <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/audio/". $result->aud ?>" type="audio/wav"> </audio> <?php }?></li>
               </ul>
             </td>
             <td class="data_td"><?php echo $result->question ?></td>
@@ -354,7 +357,7 @@ if(isset($_POST['update_submit'])){
           
     <?php } else { ?>
       <tr>
-        <td class="data_td text-center" colspan="8">There are no quizes available to display</td>
+        <td class="data_td text-center" colspan="10">There are no quizes available to display</td>
       </tr>
     <?php }?>
 

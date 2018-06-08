@@ -152,9 +152,10 @@ if(isset($_POST['submit'])){
 function insert_data($media){
   
   $lvlAndTopic = $_POST['topic'];
-  $splitLvl = explode('-',$lvlAndTopic);
+  $splitLvl = explode('@',$lvlAndTopic);
   $level = $splitLvl[0];
-  $topic = $splitLvl[1];
+  $unit = $splitLvl[1];
+  $topic = $splitLvl[2];
   $mediaData = $media;
   $question = $_POST['question'];
   $ch1 = $_POST['ch1'];
@@ -183,6 +184,7 @@ function insert_data($media){
 
   $result = $wpdb->insert('wp_quiz', array(
     'topic_level'   => $level,
+    'unit'          => $unit,
     'topic'         => $topic,
     'img'           => $mediaData['img'],
     'aud'           => $mediaData['aud'],

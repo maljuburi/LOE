@@ -7,6 +7,7 @@ if($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name) {
 	$sql = "CREATE TABLE $table_name (
 		id int(6) unsigned NOT NULL AUTO_INCREMENT,
 		topic_level varchar(50) NOT NULL,
+		unit varchar(50) NOT NULL,
 		topic varchar(50) NOT NULL,
 		img varchar(200),
 		aud varchar(200),

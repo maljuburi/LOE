@@ -8,6 +8,7 @@ if(isset($_POST['quizId'])){
     ");
     
     $edit_level = $results[0]->topic_level;
+    $edit_unit = $results[0]->unit;
     $edit_topic = $results[0]->topic;
     $edit_question = $results[0]->question;
     $edit_ch1 = $results[0]->ch1;
