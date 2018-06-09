@@ -211,6 +211,24 @@ footer {
   z-index: 1;
   background: #181A1F; }
 
+.social-media {
+  padding: 2em;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: center; }
+  .social-media .facebook,
+  .social-media .twitter,
+  .social-media .instagram {
+    display: inline-block; }
+    .social-media .facebook img,
+    .social-media .twitter img,
+    .social-media .instagram img {
+      border-radius: 5px;
+      margin-right: 0.5em; }
+    .social-media .facebook img:hover,
+    .social-media .twitter img:hover,
+    .social-media .instagram img:hover {
+      opacity: 0.8; }
+
 .copyright {
   font-size: 13px;
   font-style: italic;

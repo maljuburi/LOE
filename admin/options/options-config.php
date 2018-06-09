@@ -1,6 +1,5 @@
 <?php
 
-
 function LOE_admin_menu(){
 	// Creating the Admin page
 	add_menu_page(
@@ -52,8 +51,20 @@ function LOE_admin_menu(){
 		'LOE_quiz_table'
 	);
 
-
-
+	add_submenu_page(
+		// Parent Slug
+		'LOE_theme_options',
+		// Page title
+		'Social Media Control',
+		// Menu title
+		'Social Media',
+		// capability
+		'manage_options',
+		// Sub page Slug
+		'LOE_social_media_page',
+		// Callback function to generate the page
+		'LOE_social_media'
+	);
 
 
 }
