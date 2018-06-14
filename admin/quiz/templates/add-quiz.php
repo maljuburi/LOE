@@ -28,11 +28,16 @@ if(isset($_POST['submit'])){
   $vidSize = $vid['size'];
   $vidError = $vid['error'];
   $vidType = $vid['type'];
+
+  // Youtube URL
+  $iframeStr = esc_html($_POST['vidUrl']);
+
   
-  if($imgName != "" || $audName != "" || $vidName != ""){
+  
+  if($imgName != "" || $audName != "" || $vidName != "" || !empty($iframeStr)){
 
     $allowed = array('jpg','jpeg','png','mp3','wav','mp4');
-    $mediaArray = array('img'=>'', 'aud'=>'','vid'=>'');
+    $mediaArray = array('img'=>'', 'aud'=>'','vid'=>'', 'iframeStr'=>'');
 
     if($imgName != ""){
       
@@ -133,11 +138,14 @@ if(isset($_POST['submit'])){
 
     }
 
+    if(!empty($iframeStr)){
+      $mediaArray['iframeStr']= $iframeStr;
+    }
     
     insert_data($mediaArray);
     
   }else{
-    $mediaArray = array('img'=>'', 'aud'=>'','vid'=>'');
+    $mediaArray = array('img'=>'', 'aud'=>'','vid'=>'', 'iframeStr'=>'');
     insert_data($mediaArray);
   }
 
@@ -157,7 +165,7 @@ function insert_data($media){
   $unit = $splitLvl[1];
   $topic = $splitLvl[2];
   $mediaData = $media;
-  $question = $_POST['question'];
+  $question = esc_html($_POST['question']);
   $ch1 = $_POST['ch1'];
   $ch2 = $_POST['ch2'];
   $ch3 = $_POST['ch3'];
@@ -182,6 +190,7 @@ function insert_data($media){
   
   global $wpdb;
 
+  
   $result = $wpdb->insert('wp_quiz', array(
     'topic_level'   => $level,
     'unit'          => $unit,
@@ -189,6 +198,7 @@ function insert_data($media){
     'img'           => $mediaData['img'],
     'aud'           => $mediaData['aud'],
     'vid'           => $mediaData['vid'],
+    'iframeUrl'     => $mediaData['iframeStr'],
     'question'      => $question,
     'ch1'           => $ch1,
     'ch2'           => $ch2,

@@ -7,4 +7,7 @@
   <input class="add-file" type="file" name="aud" id="aud" accept=".mp3, .wav">
   <small class="col-md-12 text-muted"><span class="dashicons dashicons-format-video text-danger"></span> ( .mp4 )</small>
   <input class="add-file" type="file" name="vid" id="vid" accept=".mp4">
+  
+  <label class="quiz-lbl col-md-12" ><span class="dashicons dashicons-video-alt3 text-danger"></span> Add iframe From Youtube (optional) :</label>
+  <input class="form-control col-md-12" type="text" name="vidUrl" id="vidUrl" value="">
 </div>

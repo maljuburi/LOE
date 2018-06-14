@@ -1,17 +1,17 @@
 
 <?php
 
-    $beginnerPage =  get_page_by_title('beginner');
-    $intermediatePage = get_page_by_title('intermediate');
-    $advancePage = get_page_by_title('advance');
+  $beginnerPage =  get_page_by_title('beginner');
+  $intermediatePage = get_page_by_title('intermediate');
+  $advancePage = get_page_by_title('advance');
 
-    $args = array('post_type' => 'page');
-    $pagesQuery = new WP_Query();
-    $allPages = $pagesQuery->query($args);
+  $args = array('post_type' => 'page');
+  $pagesQuery = new WP_Query();
+  $allPages = $pagesQuery->query($args);
 
-    $BeginnerChildren = get_page_children( $beginnerPage->ID, $allPages );
-    $IntermediateChildren = get_page_children( $intermediatePage->ID, $allPages );
-    $AdvanceChildren = get_page_children( $advancePage->ID, $allPages );
+  $BeginnerChildren = get_page_children( $beginnerPage->ID, $allPages );
+  $IntermediateChildren = get_page_children( $intermediatePage->ID, $allPages );
+  $AdvanceChildren = get_page_children( $advancePage->ID, $allPages );
 
 ?>
 

@@ -95,6 +95,12 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0 0 0.3em black; }
 
+.iframewrapper {
+  padding: 0.5em; }
+  .iframewrapper iframe {
+    width: 175px;
+    height: 100px; }
+
 .add-file {
   margin-bottom: 1em;
   margin-left: 1em;
