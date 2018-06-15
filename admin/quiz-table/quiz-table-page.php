@@ -85,7 +85,7 @@ if(isset($_POST['deleteQuiz'])){
               <ul>
                 <?php if($result->img != ""){ ?> <li>Image <br><img class="quiz_table_thumb" width="100" src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/image/". $result->img?>"> <?php }?></li>
                 <?php if($result->vid != ""){ ?> <li>Video <br><video class="quiz_table_thumb" width="100" controls  > <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/video/". $result->vid ?>" type="video/mp4"> </video> <?php }?></li>
-                <?php if($result->aud != ""){ ?> <li>Audio <br><audio class="quiz_table_thumb" style="width: 100px" controls  > <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/audio/". $result->aud ?>" type="audio/mpeg"> <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/audio/". $result->aud ?>" type="audio/wav"> </audio> <?php }?></li>
+                <?php if($result->aud != ""){ ?> <li>Audio <br> <i onclick="pc(this);" id="playBtn" class="fas fa-play-circle playBtn"></i> <audio class="quiz_table_thumb" style="min-width: 100px" controls  > <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/audio/". $result->aud ?>" type="audio/mpeg"> <source src="<?php echo get_template_directory_uri()."/assets/quiz-uploads/audio/". $result->aud ?>" type="audio/wav"> </audio> <?php }?></li>
               </ul>
             </td>
             <td class="data_td">
@@ -133,3 +133,38 @@ if(isset($_POST['deleteQuiz'])){
     
   </div> <!-- container       -->
 </div> <!-- wrapper       -->
+
+<script>
+
+  
+  var isPlaying = false;
+
+  function playPause(myAudio,el){
+    if(isPlaying){
+      myAudio.pause();
+      el.style.color = "#439943";
+      el.classList.add("fa-play-circle");
+      el.classList.remove("fa-pause-circle");
+      
+    }else{
+      el.classList.add("fa-pause-circle");
+      el.classList.remove("fa-play-circle");
+      el.style.color = "#0275D8";
+      myAudio.play();
+    }
+  };
+
+  function pc(el){
+    var that = el;
+    var myAudio = el.parentNode.getElementsByTagName("audio")[0];
+    playPause(myAudio,that);
+
+    myAudio.onplaying = function () {
+      isPlaying = true;
+    };
+    myAudio.onpause = function () {
+      isPlaying = false;
+    };
+
+  }
+</script>

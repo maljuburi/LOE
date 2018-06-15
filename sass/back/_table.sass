@@ -20,6 +20,7 @@
   vertical-align: middle
   border: 1px solid $darkborder
   padding: 0.5em
+  box-sizing: border-box
   ul
     width: 100%
     padding-left: 1em
@@ -28,7 +29,8 @@
     .table-choices
       margin: 0
       list-style-type: upper-alpha
-
+  audio
+    display: none
 
 .header_tr
   background: $darkBG
@@ -69,8 +71,16 @@
   border: 1px solid $lightborder
   box-shadow: 0 0 0.3em black
 
+
 .iframewrapper
   padding: 0.5em
   iframe
     width: 175px
     height: 100px
+
+.playBtn
+  font-size: 2.5em
+  color: $green
+  border-radius: 50%
+  box-shadow: 0 0 0.1em black
+  border: 1px solid $lightborder
