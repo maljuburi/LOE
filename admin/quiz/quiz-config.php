@@ -13,7 +13,7 @@ if($wpdb->get_var("SHOW TABLES LIKE '$table_name'") != $table_name) {
 		aud varchar(200),
 		vid varchar(200),
 		iframeUrl varchar(500),
-		question varchar(500) NOT NULL,
+		question varchar(5000) NOT NULL,
 		ch1 varchar(50) NOT NULL,
 		ch2 varchar(50) NOT NULL,
 		ch3 varchar(50) NOT NULL,

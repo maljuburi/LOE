@@ -6,7 +6,7 @@ function LOE_backend_scripts(){
 	// CSS
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), 'all' );
 	wp_enqueue_style( 'backStyle', get_template_directory_uri() . '/css/back-style.css', array(), 'all' );
-	wp_enqueue_style( 'fontAwesome', 'https://use.fontawesome.com/releases/v5.0.13/css/all.css', array(), 'all' );
+	wp_enqueue_style( 'fontAwesome', get_template_directory_uri(). '/css/fontawesome-all.min.css', array(), 'all' );
 
 	// JS
 	wp_enqueue_script( 'tooltips', 'http://www.atlasestateagents.co.uk/javascript/tether.min.js', array(), true );
