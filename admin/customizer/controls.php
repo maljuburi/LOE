@@ -79,46 +79,60 @@ $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'slider
 
 
 	)));
-
-
-// image 3 heading
-$wp_customize->add_control('slider_heading3', array(
-
-	'label'				=>	__('Image Heading #3', 'LOE'),
-	'section'			=>	'slider',
-	'settings'			=>	'slider_heading3',
-	'priority'			=>	8
-
-
+  
+  
+  // image 3 heading
+  $wp_customize->add_control('slider_heading3', array(
+    
+    'label'				=>	__('Image Heading #3', 'LOE'),
+    'section'			=>	'slider',
+    'settings'			=>	'slider_heading3',
+    'priority'			=>	8
+    
+    
 	));
+  
+  
+  // image 3 text
+  $wp_customize->add_control('slider_text3', array(
+    
+    'label'				=>	__('Image Text #3', 'LOE'),
+    'section'			=>	'slider',
+    'settings'			=>	'slider_text3',
+    'priority'			=>	9
+    
+  ));
+  
+  
 
 
-// image 3 text
-$wp_customize->add_control('slider_text3', array(
 
-	'label'				=>	__('Image Text #3', 'LOE'),
-	'section'			=>	'slider',
-	'settings'			=>	'slider_text3',
-	'priority'			=>	9
+  // Logo
+  // ------------------------------
+  $wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'logo', array(
+    
+    'label' 				=>	__('Logo', 'LOE'),
+    'section' 			=>	'logo',
+    'settings'			=>	'logo',
+    'priority'			=>	1
+    )));
+// --------------------------------------
+  
 
-));
-
-
-
-
-// Beginner Controls
-// =============================================================
-// Beginner Card header
-$wp_customize->add_control('beginner_card_header', array(
-
-	'label'				=>	__('Beginner Header', 'LOE'),
-	'section'			=>	'levels_cards',
-	'settings'			=>	'beginner_heading',
-	'priority'			=>	1
-
+  
+  // Beginner Controls
+  // =============================================================
+  // Beginner Card header
+  $wp_customize->add_control('beginner_card_header', array(
+    
+    'label'				=>	__('Beginner Header', 'LOE'),
+    'section'			=>	'levels_cards',
+    'settings'			=>	'beginner_heading',
+    'priority'			=>	1
+    
 	));
-
-// Beginner Card Title
+  
+  // Beginner Card Title
 $wp_customize->add_control('beginner_card_title', array(
 
 	'label'				=>	__('Beginner Title', 'LOE'),

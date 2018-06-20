@@ -1,6 +1,4 @@
 
-	
-
 <footer>
 	<div class="container">
 		<div class="row">
@@ -59,7 +57,7 @@
 
 					<div class="col-sm-12 copyright">
 						<p>&copy; Copyright 2017-<?php echo date("Y"); ?> . All rights reserved.
-						Developed by <a href="https://github.com/maljuburi" target="_blank">Muhammad Al Juburi</a></p>
+						Developed by <a href="https://maljuburi.github.io/" target="_blank">Muhammad Al Juburi</a></p>
 					</div>
 				</div>
 			</div>

@@ -707,6 +707,9 @@ iframe {
   .footer-nav {
     text-align: center; }
     .footer-nav li li {
-      list-style: none; } }
+      list-style: none; }
+
+  .social-media {
+    text-align: center; } }
 
 /*# sourceMappingURL=front-style.css.map */

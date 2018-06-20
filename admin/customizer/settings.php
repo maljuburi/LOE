@@ -45,21 +45,33 @@ $wp_customize->add_setting('slider_image3',array(
 	'default'				=>	get_bloginfo('template_directory').'/assets/cover3.jpg',
 	'type'					=>	'theme_mod'
 	));
-
-
-// image 3 heading
-$wp_customize->add_setting('slider_heading3',array(
-	'default'				=>	_x('Caption to be Written #3','LOE'),
-	'type'					=>	'theme_mod'
+  
+  
+  // image 3 heading
+  $wp_customize->add_setting('slider_heading3',array(
+    'default'				=>	_x('Caption to be Written #3','LOE'),
+    'type'					=>	'theme_mod'
+	));
+  
+  
+  // image 3 text
+  $wp_customize->add_setting('slider_text3',array(
+    'default'				=>	_x('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum magnam illo #3','LOE'),
+    'type'					=>	'theme_mod'
 	));
 
+  
 
-// image 3 text
-$wp_customize->add_setting('slider_text3',array(
-	'default'				=>	_x('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum magnam illo #3','LOE'),
-	'type'					=>	'theme_mod'
-	));
 
+
+
+// Logo
+// -----------------
+$wp_customize->add_setting('logo',array(
+  'default'				=>	get_bloginfo('template_directory').'/assets/icon.svg',
+  'type'					=>	'theme_mod'
+  ));
+// ------------------------------------
 
 
 // Beginner Level
