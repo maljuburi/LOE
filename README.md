@@ -7,7 +7,7 @@ and more...
 
 [add_quiz]: https://github.com/maljuburi/resources/blob/master/LOE/Add_Quiz.png
 [beginner_unit]: https://github.com/maljuburi/resources/blob/master/LOE/Beginner_Units.png
-[customizer]: https://github.com/maljuburi/resources/blob/master/LOE/CustomTheme.png
+[customizer]: https://github.com/maljuburi/resources/blob/master/LOE/customizer.png
 [home_page2]: https://github.com/maljuburi/resources/blob/master/LOE/Home_Bottom.png
 [home_page1]: https://github.com/maljuburi/resources/blob/master/LOE/Home_Page.png
 [inbox_page]: https://github.com/maljuburi/resources/blob/master/LOE/Inbox_Page.png
