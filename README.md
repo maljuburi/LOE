@@ -22,36 +22,54 @@ and more...
 ![alt text][home_page1]
 ![alt text][home_page2]
 
+---
+
 ### English Level Units
 
 ![alt text][beginner_unit]
+
+---
 
 ### Unit Topics
 
 ![alt text][unit_topics]
 
+---
+
 ### Topic Page
 
 ![alt text][topic_page]
+
+---
 
 ### Take Quiz if Available
 
 ![alt text][take_quiz]
 
+---
+
 ### Admin Dashboard / Add Quiz Page
 
 ![alt text][add_quiz]
+
+---
 
 ### Admin Dashboard / Manage Quiz
 
 ![alt text][manage_quiz]
 
+---
+
 ### Admin Dashboard / Add Social Media Links
 
 ![alt text][social_media]
 
+---
+
 ### Admin Dashboard / Theme Customizer
 
 ![alt text][customizer]
+
+---
 
 Possibilities are endless in this theme, and I am still developing more and more features.
