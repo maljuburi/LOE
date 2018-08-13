@@ -32,8 +32,8 @@
 						'container_class'	=>	'main-menu col-xs-12 col-md-9',
 						'container_id'		=>	'main-menu',
 						'menu_class'		=>	'nav justify-content-end',
-						'fallback_cb'       => 'LOE_Bootstrap_Navwalker::fallback',
-						'walker'			=>	new LOE_Bootstrap_Navwalker()
+						'fallback_cb'       => 'LOE_Nav_Walker::fallback',
+						'walker'			=>	new LOE_Nav_Walker()
 					)); ?>
 
 			</div>

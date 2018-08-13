@@ -1,15 +1,15 @@
 <?php
 
-// =============================
+// ==========================
 // include functions files
-// ================================
+// ===========================
 
 // Front-End Functions
 require get_template_directory() . '/inc/LOE-enqueue.php';
 require get_template_directory() . '/inc/LOE-navigation.php';
 require get_template_directory() . '/inc/LOE-widgets.php';
 require get_template_directory() . '/inc/LOE-theme-support.php';
-require get_template_directory() . '/inc/wp-bootstrap-navwalker.php';
+require get_template_directory() . '/inc/LOE-nav-walker.php';
 require get_template_directory() . '/inc/templates/LOE-ajax.php';
 
 // Back-End Functions
@@ -27,7 +27,7 @@ require get_template_directory() . '/admin/social/social-media-config.php';
 
 // ==================================
 // add action or Filter of functions
-// =================================
+// ====================================
 
 // Fron-End Actions
 // ----------------

@@ -19,7 +19,6 @@
 					'menu_class'		=>	'footer-nav',
 					
 					)); ?>
-			
 			</div>
 			<div class="footer-menu col-sm-3">
 				<?php wp_nav_menu(array(
